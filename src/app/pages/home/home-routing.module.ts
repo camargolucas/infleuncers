@@ -27,7 +27,7 @@ const routes: Routes = [
      {
        path:'influencer',
        loadChildren:() => import('./influencers/influencers.module').then(m => m.InfluencersPageModule),
-       data: {pageName:'Influeniadores'}
+       data: {pageName:'Influenciadores'}
      }
 
     ]
