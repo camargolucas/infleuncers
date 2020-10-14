@@ -14,15 +14,43 @@ export class HomePage implements OnInit {
     //   icon: 'mail'
     // },
     {
-      title: 'Influenciadores',
-      url: '/home/influencer',
+      title: 'Inicio',
+      url: '/home/inicio',
+      color:'blue'
+      //icon: 'heart'
+    },
+    {
+      title: 'Quem Somos',
+      url: '/home/quem-somos',
+      color:'red'
+     // icon: 'paper-plane'
+     
+    }, 
+   /*  {
+      title: 'Portfólio',
+      url: '/home/portfolio',
       icon: 'heart'
     },
     {
-      title: 'Empresas',
-      url: '/home/company',
-      icon: 'paper-plane'
-    }
+      title: 'Cadastre-se',
+      url: '/home/cadastro',
+      icon: 'heart'
+    },
+    {
+      title: 'Plataforma',
+      url: '/home/plataforma',
+      icon: 'heart'
+    },
+    {
+      title: 'FAQ',
+      url: '/home/faq',
+      icon: 'heart'
+    },
+    {
+      title: 'Fale Conosco',
+      url: '/home/faleconosco',
+      icon: 'heart'
+    }, */
   
 
   ];

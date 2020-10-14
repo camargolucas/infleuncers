@@ -12,34 +12,23 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'company'
+        redirectTo: 'inicio'
+      },     
+      {
+        path: 'inicio',
+        loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
       },
       {
-				path: 'folder',
-        loadChildren: () => import('../../folder/folder.module').then(m => m.FolderPageModule),
-        data: {pageName:'Inicio'}
+        path: 'quem-somos',
+        loadChildren: () => import('./quem-somos/quem-somos.module').then( m => m.QuemSomosPageModule)
       },
-      {
-				path: 'company',
-        loadChildren: () => import('./company/company.module').then(m => m.CompanyPageModule),
-        data: {pageName:'Empresa'}
-      },
-     {
-       path:'influencer',
-       loadChildren:() => import('./influencers/influencers.module').then(m => m.InfluencersPageModule),
-       data: {pageName:'Influenciadores'}
-     }
+     
 
     ]
   },
-  {
-    path: 'influencers',
-    loadChildren: () => import('./influencers/influencers.module').then( m => m.InfluencersPageModule)
-  },
-  {
-    path: 'company',
-    loadChildren: () => import('./company/company.module').then( m => m.CompanyPageModule)
-  }
+  
+
+
 ];
 
 @NgModule({

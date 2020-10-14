@@ -1,0 +1,20 @@
+ion-content {
+    --background: var(--background-color);
+  }
+
+  .first-text{
+    position: absolute;    
+    left: 2vw;
+    right: 30px;
+
+    h1{
+      font-size: 6vw;
+    }
+  }
+
+  .first-image{
+    text-align: right;
+    img{
+     width: 60vw
+    }
+  }
