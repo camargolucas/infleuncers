@@ -3,18 +3,43 @@ ion-content {
   }
 
   .first-text{
-    position: absolute;    
-    left: 2vw;
+    position: absolute;
+    left: 9vw;
     right: 30px;
+    top: 3vh;
+    color: #81818174;
 
     h1{
       font-size: 6vw;
+      line-height: 0.9;
+      margin: 0;
     }
   }
 
+  .div-sub-title{
+    right: 0;
+    position: absolute;
+
+    .traço{
+      width: 2.5vw;
+      height: 0.2vh;
+      margin-top: 0.4vh;
+      background: red;
+    }
+  }
+
+ 
+  .sub-title{
+    text-align: right;
+    width: 37vw;
+    position: absolute;
+    top: 50vh;
+    font-size: 1.3vw;
+    color: #818181;
+  }
   .first-image{
     text-align: right;
     img{
-     width: 60vw
+     width: 50vmax;
     }
   }

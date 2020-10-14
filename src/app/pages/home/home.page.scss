@@ -93,8 +93,9 @@ ion-menu ion-content {
     --background: var(--background-color);
     --ripple-color: transparent;
     --background-hover:unset;
-    --min-height: 30px;
+    --min-height: 5.5vh;
     color: #757575;
+    font-size: 3vh;
 
     ion-text{
       display: flex;
@@ -107,7 +108,7 @@ ion-menu ion-content {
   }
 
   ion-menu{
-    max-width: 270px;
+   
     background: var(--background);
   }
   
@@ -130,8 +131,8 @@ ion-menu ion-content {
      display: flex;
 
     .traço{
-      width: 2px;     
-      height: 20px;
+      width: 0.2vw;
+      height: 3vh;
       margin-right: 5px;
       transition: all 0.3s ease-in-out;
     }
