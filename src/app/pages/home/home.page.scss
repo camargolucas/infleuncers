@@ -83,19 +83,21 @@ ion-menu ion-content {
     color: var(--ion-color-primary);
   } */
   ion-split-pane{
-    --side-min-width: 16vw;
-    --side-max-width: 16vw
+    --border:unset;
+    --side-min-width: 19vw;
+    --side-max-width: 19vw
   }
 
 
   ion-menu ion-item{
-    
+    --color-hover: #8f8f8f;
     --background: var(--background-color);
     --ripple-color: transparent;
     --background-hover:unset;
     --min-height: 5.5vh;
     color: #757575;
     font-size: 3vh;
+  
 
     ion-text{
       display: flex;
@@ -114,20 +116,30 @@ ion-menu ion-content {
   
   ion-item.selected {
     .blue{
-      color:blue;
+      color:#305F9D;
       &-background{
-        background:blue;
+        background:#305F9D;
       }
     }
     
     .red{
       
-      color: red;
+      color: #EE4367;
     
       &-background{
-        background:red;
+        background:#EE4367;
       }
     }   
+
+    .yellow{
+      color: #F3B63E;
+
+      &-background{
+        background:#F3B63E;
+      }
+    }
+
+
      display: flex;
 
     .traço{

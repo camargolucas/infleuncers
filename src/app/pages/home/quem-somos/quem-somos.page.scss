@@ -1,3 +1,56 @@
 ion-content {
     --background: var(--background-color);
   }
+
+
+.conteudo{
+  display: flex;
+  height: 100vh;
+
+  .image{
+    img{
+      width: 40vw;
+      height: 100vh;
+    }
+  }
+  
+
+  .text{
+    
+    padding: 3vw;
+    background: #305F9D;
+    width: 60vw;
+      h1{
+        font-size: 3vw;
+        text-transform: capitalize;
+        color: #FFBB40;
+      }
+
+      .long-text{
+        padding-top: 5vh;
+        font-size: 1.5vw;
+        color: white;
+      }
+  }
+
+  .tripa{
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px white;
+    border-radius: 0px 0px 0px 50px;
+    background: #FFBB40;
+    color: #585B5C;
+    height: 8vh;
+    align-items: center;
+    position: absolute;
+    width: 46vw;
+    right: 0;
+
+    h2{
+      margin: 0;
+      font-weight: bold;
+      font-size: 2vw;
+    }
+  }
+}

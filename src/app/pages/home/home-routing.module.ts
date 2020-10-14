@@ -22,10 +22,15 @@ const routes: Routes = [
         path: 'quem-somos',
         loadChildren: () => import('./quem-somos/quem-somos.module').then( m => m.QuemSomosPageModule)
       },
+      {
+        path: 'portfolio',
+        loadChildren: () => import('./portfolio/portfolio.module').then( m => m.PortfolioPageModule)
+      },
      
 
     ]
   },
+
   
 
 

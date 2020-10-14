@@ -16,21 +16,22 @@ export class HomePage implements OnInit {
     {
       title: 'Inicio',
       url: '/home/inicio',
-      color:'blue'
+      color:'red'
       //icon: 'heart'
     },
     {
       title: 'Quem Somos',
       url: '/home/quem-somos',
-      color:'red'
-     // icon: 'paper-plane'
-     
+      color:'blue'
+     // icon: 'paper-plane'     
     }, 
-   /*  {
+     {
       title: 'Portfólio',
       url: '/home/portfolio',
-      icon: 'heart'
+      icon: 'heart',
+      color: 'yellow'
     },
+    /*
     {
       title: 'Cadastre-se',
       url: '/home/cadastro',
@@ -59,6 +60,7 @@ export class HomePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
   
