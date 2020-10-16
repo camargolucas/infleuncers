@@ -29,3 +29,23 @@
 .background{
     --background: var(--background-color) !important;
 }
+
+.modal-missao{
+    --width: 50vw;
+    --height: 27vh;
+    --border-radius: 0px 50px 0px 50px;
+}
+
+.modal-visao{
+    --width: 50vw;
+    --height: 21vh;
+    --border-radius: 0px 50px 0px 50px;
+}
+
+.modal-valores{
+    --width: 50vw;
+    --height: 17vh;
+    --border-radius: 0px 50px 0px 50px;
+
+}
+

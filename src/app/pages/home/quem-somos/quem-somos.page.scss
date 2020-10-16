@@ -37,7 +37,7 @@ ion-content {
     margin-top: 7vh;
     display: flex;
     justify-content: space-around;
-    border: solid 1px white;
+    border: solid 1px #FFBB40;
     border-radius: 0px 0px 0px 50px;
     background: #FFBB40;
     color: #585B5C;
@@ -51,6 +51,7 @@ ion-content {
       margin: 0;
       font-weight: bold;
       font-size: 2vw;
+      text-transform: capitalize;
     }
   }
 }

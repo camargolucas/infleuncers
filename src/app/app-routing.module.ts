@@ -10,7 +10,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  }, 
+  },   {
+    path: 'missao-modal',
+    loadChildren: () => import('./modals/missao-modal/missao-modal.module').then( m => m.MissaoModalPageModule)
+  },
+
 ];
 
 @NgModule({

@@ -1,0 +1,12 @@
+<div ngClass="{{'conteudo-' + nomeModal}}">
+  <div class="text">
+    <div class="title">
+      <div class="traço"></div>{{modals[nomeModal].titulo}}
+    </div>
+    <div class="body" [innerHTML]="modals[nomeModal].txt">
+
+    </div>
+  </div>
+  <img src={{modals[nomeModal].img}}>
+
+</div>

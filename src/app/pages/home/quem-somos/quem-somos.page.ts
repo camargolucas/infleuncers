@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { MissaoModalPage } from 'src/app/modals/missao-modal/missao-modal.page';
 
 @Component({
   selector: 'app-quem-somos',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuemSomosPage implements OnInit {
 
-  constructor() { }
+  constructor(private modal:ModalController) { }
 
   ngOnInit() {
   }
 
+
+ async openModal(strModal){
+    const modal = await this.modal.create({
+      component: MissaoModalPage,
+      cssClass: `modal-${strModal}`,
+      componentProps: {
+        'nomeModal': strModal,       
+      }
+    })
+
+    
+    await modal.present();
+
+  }
 }
