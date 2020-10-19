@@ -36,6 +36,16 @@ ion-content {
     }
     
   }
+
+  .barra-amarela{
+
+    img{
+      position: absolute;
+      bottom: 0;
+      height: 83vh;
+      left: 5vw;
+    }
+  }
   
 
   .tripa{   
@@ -43,13 +53,13 @@ ion-content {
     display: flex;
     justify-content: space-around;
     border: solid 1px white;
-    border-radius: 0px 0px 0px 50px;
+    border-radius: 0px 0px 0px 35px;
     background: #305F9D;
     color: white;
     height: 7vh;
     align-items: center;
     position: absolute;
-    width: 72vw;
+    width: 67vw;
     right: 0;
 
     h2{

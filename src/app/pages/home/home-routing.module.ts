@@ -26,10 +26,23 @@ const routes: Routes = [
         path: 'portfolio',
         loadChildren: () => import('./portfolio/portfolio.module').then( m => m.PortfolioPageModule)
       },
+      {
+        path: 'cadastre-se',
+        loadChildren: () => import('./cadastre-se/cadastre-se.module').then( m => m.CadastreSePageModule)
+      },
+      {
+        path: 'plataforma',
+        loadChildren: () => import('./plataforma/plataforma.module').then( m => m.PlataformaPageModule)
+      },
+      {
+        path: 'fale-conosco',
+        loadChildren: () => import('./fale-conosco/fale-conosco.module').then( m => m.FaleConoscoPageModule)
+      },
      
 
     ]
   },
+ 
 
   
 

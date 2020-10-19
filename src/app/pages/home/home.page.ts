@@ -31,27 +31,33 @@ export class HomePage implements OnInit {
       icon: 'heart',
       color: 'yellow'
     },
-    /*
+   
     {
       title: 'Cadastre-se',
-      url: '/home/cadastro',
-      icon: 'heart'
+      url: '/home/cadastre-se',
+      icon: 'heart',
+      color: 'red'
     },
     {
       title: 'Plataforma',
       url: '/home/plataforma',
-      icon: 'heart'
-    },
+      icon: 'heart',
+      color: 'blue'
+    },  
+    {
+      title: 'Fale Conosco',
+      url: '/home/fale-conosco',
+      icon: 'heart',
+      color: 'yellow'
+    }
+    /*
     {
       title: 'FAQ',
       url: '/home/faq',
       icon: 'heart'
     },
-    {
-      title: 'Fale Conosco',
-      url: '/home/faleconosco',
-      icon: 'heart'
-    }, */
+     
+  , */
   
 
   ];
