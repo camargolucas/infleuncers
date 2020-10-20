@@ -1,3 +1,31 @@
 ion-content {
     --background: var(--background-color);
   }
+
+.conteudo{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+
+  .div-img{
+
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    img{
+      height: 100vh;
+    }
+  }
+
+  ion-chip{
+    height: 15vh;
+    border-radius: 50px;
+    width: 20vw;
+    --background: #f3ba48;
+    justify-content: center;
+    color: white;
+    font-size: 1.8vw;
+  }
+
+}
