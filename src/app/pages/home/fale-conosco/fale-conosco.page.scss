@@ -2,6 +2,21 @@ ion-content {
     --background: var(--background-color);
   }
 
+  ion-footer{
+    position: absolute;
+    bottom: 0;    
+    text-align: center;
+    --background: var(--background-color);
+    
+    ion-toolbar{
+      --background: var(--background-color);
+    }
+
+    ion-title{
+      font-size: 0.8vw;
+    }
+  }
+
 .conteudo{
   display: flex;
   align-items: center;
@@ -18,14 +33,48 @@ ion-content {
     }
   }
 
-  ion-chip{
-    height: 15vh;
-    border-radius: 50px;
-    width: 20vw;
-    --background: #f3ba48;
-    justify-content: center;
-    color: white;
-    font-size: 1.8vw;
-  }
+  .miolo{
+    position: absolute;
+    left: 10vw;
+
+    ion-chip{
+      height: 15vh;
+      border-radius: 100px;
+      width: 20vw;
+      --background: #f3ba48;
+      justify-content: center;
+      color: white;
+      font-size: 1.8vw;
+    }
+
+    .social-media{
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 2vh;
+      margin-left: 5vh;
+
+
+      ion-chip{
+        width: 3vw;
+        height: 5vh;
+      }
+
+      div{
+        width: 2.7vw;
+        height: 5.5vh;  
+        border: solid 2px gray;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+        ion-icon{
+          font-size: 30px;
+          color: gray;
+        }
+      }
+    }
+}
 
 }
