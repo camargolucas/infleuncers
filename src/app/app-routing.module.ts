@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'missao-modal',
     loadChildren: () => import('./modals/missao-modal/missao-modal.module').then( m => m.MissaoModalPageModule)
   },
+  {
+    path: 'portfolio-modal',
+    loadChildren: () => import('./modals/portfolio-modal/portfolio-modal.module').then( m => m.PortfolioModalPageModule)
+  },
 
 ];
 
