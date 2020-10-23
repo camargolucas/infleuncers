@@ -10,26 +10,20 @@ export class PortfolioModalPage implements OnInit {
   constructor() { }
 
   modals = {
-    missao:{
+    digital:{
       titulo: 'Pegada Digital',
       img:'/assets/images/modals/pegada-digital.png',
-      txt: `Ser agente de <b>transformação</b> digital de empresas e pessoas no Brasil,
-      <b>superando</b> barreiras físicas e
-      <b>alavancando</b> a comunicação e as vendas dos nossos clientes através da 
-      expertise de uma plataforma de marketplace de alta
-      tecnologia, que se propõe a <b>conectar</ib> empresas e influenciadores digitais
-      cadastrados em todo o país com o objetivo
-      de <b>divulgar</b> digitalmente marcas, produtos e serviços.`
+      txt: `Quer aumentar o reconhecimento da sua marca? Lançar um novo produto? Se destacar dentro de novos nichos de mercado? A <b>INSPREAD</b> tem no seu portfólio o influenciador ideal para ajudar a desenvolver a estratégia de marketing digital e alavancar o seu negócio. Clique aqui, preencha seu formulário e se renda a pegada digital.`
     },
-    valores:{
+    consultoria:{
       titulo: 'Consultoria Sobre Medida',
       img:'/assets/images/modals/consultoria.png',
-      txt: `Ética, Integridade, Transparência, Respeito, Compromisso, Profissionalismo, Disrrupção, Credibilidade, Qualidade, Foco, Segurança, Excelência, Eficiência.`
+      txt: `A <b>INSPREAD</b> é a maior empresa de consultoria personalizada de marketing de influência do mercado. Avaliamos sua demanda, traçamos a estratégia de marketing digital compatibilizando o seu propósito com o nosso portfólio de influenciadores, e escalamos o seu negócio. e conheça nosso portfólio de influenciadores digitais.`
     },
-    visao:{
+    campanhas:{
       titulo: 'Campanhas Completas',
       img:'/assets/images/modals/campanhas.png',
-      txt: `Ser a maior e mais <b>importante</b> plataforma de marketplace de influenciadores digitais do Brasil, contribuindo para a <b>expansão</b> dos negócios dos nossos clientes, a partir do desenvolvimento da comunicação digital das suas marcas, produtos e serviços.`
+      txt: `Somos a vitrine tecnológica do seu negócio! Unimos a expertise do marketing de influência ao maior e mais variado portfólio de influenciadores digitais do Brasil para divulgar e impulsionar sua marca, produtos e serviços. e contate-nos.`
     }
   }
 

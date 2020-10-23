@@ -20,7 +20,7 @@ export class PortfolioPage implements OnInit {
       componentProps: {
         nomeModal: modalStr
       },
-      cssClass: 'modal-portfolio'
+      cssClass: `modal-${modalStr}`
     })
 
     modal.present();

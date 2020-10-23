@@ -1,4 +1,142 @@
-img{
-    height: 27vh;
-    width: 50vw;
+$font-title: 2vw;
+$font-weight: bold;
+
+$traco-height: 3.5vh;
+$traco-margin-right: 0.5vw;              
+$traco-width: 0.1vw;
+$traco-color: #F3B63E;
+
+
+:host ::ng-deep b { 
+    font-weight: 1000;
+    color:#F3B63E;
+}
+
+.conteudo{
+
+    &-digital{
+        height: 26vh !important;
+        width: 50vw !important;
+    
+            img{
+                height: 26vh;
+                width: 50vw;
+            }
+
+            .text{
+                padding: 1vw;
+                text-align: center;
+                position: absolute;
+
+                .body{
+                    font-size: 1vw;
+                    padding-top: 1.5vh;
+                    color: #818181;
+
+                    .ultra-bold{
+                        font-weight: 1000;
+                    }
+                }
+                .title{
+                    font-size: $font-title;
+                    color: $traco-color;
+                    font-weight: $font-weight;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .traço{
+                        height: $traco-height;
+                        margin-right: $traco-margin-right;              
+                        width: $traco-width;
+                        background:$traco-color;
+                    }
+
+                }
+            }
+    }
+
+    &-consultoria{
+      
+        height: 28vh !important;
+        width: 50vw !important;
+    
+            img{
+                height: 28vh;
+                width: 50vw;
+            }
+
+            .text{
+                padding: 1vw;
+                text-align: center;
+                position: absolute;
+
+                .body{
+                    font-size: 1.2vw;
+                    padding-top: 1.5vh;
+                    color: #818181;
+
+                    .ultra-bold{
+                        font-weight: 1000;
+                    }
+                }
+                .title{
+                    font-size: $font-title;
+                    color: $traco-color;
+                    font-weight: $font-weight;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .traço{
+                        height: $traco-height;
+                        margin-right: $traco-margin-right;              
+                        width: $traco-width;
+                        background:$traco-color;
+                    }
+                }
+            }
+    }
+
+    &-campanhas{
+        height: 23vh !important;
+        width: 50vw !important;
+    
+            img{
+                height: 23vh;
+                width: 50vw;
+            }
+
+            .text{
+                padding: 1vw;
+                text-align: center;
+                position: absolute;
+
+                .body{
+                    font-size: 1.2vw;
+                    padding-top: 1.5vh;
+                    color: #818181;
+
+                    .ultra-bold{
+                        font-weight: 1000;
+                    }
+                }
+                .title{
+                    font-size: $font-title;
+                    color: $traco-color;
+                    font-weight: $font-weight;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .traço{
+                        height: $traco-height;
+                        margin-right: $traco-margin-right;              
+                        width: $traco-width;
+                        background:$traco-color;
+                    }
+                }
+            }
+    }
+
 }

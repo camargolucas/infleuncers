@@ -49,9 +49,18 @@
 
 }
 
-.modal-portfolio{
+.modal-digital{
     --width: 50vw;
-    --height: 27vh;
+    --height: 26vh;
     --border-radius: 0px 50px 0px 50px;
 }
-
+.modal-consultoria{
+    --width: 50vw;
+    --height: 28vh;
+    --border-radius: 0px 50px 0px 50px;
+}
+.modal-campanhas{
+    --width: 50vw;
+    --height: 23vh;
+    --border-radius: 0px 50px 0px 50px;
+}
