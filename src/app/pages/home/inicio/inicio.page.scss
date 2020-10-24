@@ -43,3 +43,44 @@ ion-content {
      width: 50vmax;
     }
   }
+.tripa-depoimentos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 3vw;
+
+  .depoimentos{
+    width: 50vw;
+    text-align: center;
+    border: solid 1px red;
+    height: 5vh;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    background: #EE3561;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  .depoimentos-sub{
+    color: #818181;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+  }
+}
+
+.divider{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+  .line{
+    width: 50vw;
+    height: 0.1vh;
+    background: #F3B63E;
+    margin: 5vw;
+
+  }
+}

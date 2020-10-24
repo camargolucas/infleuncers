@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
+
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400,
+    slidesPerView: 2,
+    
+  };
+
   constructor() { }
 
   ngOnInit() {
