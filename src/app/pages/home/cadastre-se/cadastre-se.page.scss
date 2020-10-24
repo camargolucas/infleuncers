@@ -1,3 +1,15 @@
 ion-content {
     --background: var(--background-color);
   }
+
+
+.image{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    height: 100vh;
+
+    img{
+      height: 100vh;
+    }
+}
