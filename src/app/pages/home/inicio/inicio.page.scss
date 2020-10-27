@@ -1,96 +1,146 @@
 ion-content {
-    --background: var(--background-color);
-  }
+  --background: var(--background-color);
+}
 
-  .first-text{
+.first-text {
+  position: absolute;
+  left: 9vw;
+  right: 30px;
+  top: 4vh;
+  color: #81818174;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .bloco-rosa {
+    width: 24vw;
     position: absolute;
-    left: 9vw;
-    right: 30px;
-    top: 3vh;
-    color: #81818174;
+    height: 8vh;
+    background: pink;
+    opacity: 0.3;
+    bottom: -12px;
+    left: 8.2vw;
+  }
+  .title {
+    $color-font: #b3b3b3;
+    font-size: 4vw;
+    line-height: 0.9;
+    margin: 0;
 
-    h1{
-      font-size: 6vw;
-      line-height: 0.9;
-      margin: 0;
+    .empresa {
+      font-weight: 600;
+      font-size: 5vw;
+      color: $color-font;
+    }
+
+    .escalavel {
+      font-size: 5vw;
+      padding-left: 4vw;
+      color: $color-font;
+    }
+
+    .marketing {
+      font-weight: bold;
+      font-size: 7.5vw;
+      color: $color-font;
     }
   }
+}
 
-  .div-sub-title{
-    right: 0;
+.div-sub-title {
+  display: flex;
+  justify-content: flex-end;
+  .texto-traço {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .traço {
+    margin-top: 0.2vh;
+    width: 3vw;
+    height: 0.1vh;
+    background: #ef4073;
     position: absolute;
+  }
+}
 
-    .traço{
-      width: 2.5vw;
-      height: 0.2vh;
-      margin-top: 0.4vh;
-      background: red;
-    }
-  }
+.sub-img {
+  display: flex;
+  align-items: center;
+}
 
- 
-  .sub-title{
-    text-align: right;
-    width: 34vw;
-    position: absolute;
-    top: 50vh;
-    font-size: 1.3vw;
-    color: #818181;
+.sub-title {
+  text-align: right;
+  width: 34vw;
+  /* position: absolute; */
+  /* top: 50vh; */
+  font-size: 1.3vw;
+  color: #818181;
+  margin-top: 15vh;
+}
+
+.first-image {
+  text-align: right;
+  img {
+    width: 50vmax;
   }
-  .first-image{
-    text-align: right;
-    img{
-     width: 50vmax;
-    }
-  }
-.tripa-depoimentos{
+}
+.tripa-depoimentos {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 3vw;
 
-  .depoimentos{
+  .tripa {
+    justify-content: center;
+    display: flex;
+    text-align: center;
     width: 50vw;
     text-align: center;
     border: solid 1px red;
-    height: 5vh;
+    height: 6vh;
     color: white;
     font-weight: bold;
     font-size: 2vw;
-    background: #EE3561;
-    border-radius: 20px;
+    background: #ee3561;
+    border-radius: 50px;
     text-transform: uppercase;
+    align-items: center;
+
+    .depoimentos {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      .traço {
+        width: 3vw;
+        height: 0.2vh;
+        background: white;
+        position: absolute;
+        opacity: 0.6;
+      }
+    }
   }
 
-  .depoimentos-sub{
+  .depoimentos-sub {
     color: #818181;
     padding-top: 1vh;
     font-size: 1.2vw;
   }
 }
 
-.divider{
-
+.divider {
   width: 100%;
   display: flex;
   justify-content: center;
 
-
-  .line{
+  .line {
     width: 50vw;
     height: 0.1vh;
-    background: #F3B63E;
+    background: #f3b63e;
     margin: 5vw;
-
   }
 }
 
-.footer{
+.footer {
   justify-content: center;
   font-size: 1.3vw;
   margin: 2vh;
-
-  
 }
-
-

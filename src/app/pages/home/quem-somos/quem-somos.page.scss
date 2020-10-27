@@ -3,6 +3,18 @@ ion-content {
   }
 
 
+.retangulo{
+  width: 20vw;
+  height: 60vh;
+  position: absolute;
+  border-style: solid;
+  border-width: 4px 0px 4px 4px;
+  border-color: #305F9D;
+  top: 17vh;
+  border: solid 1px 0px 1px 0px;
+  right: 47vw;
+}
+
 .conteudo{
   display: flex;
   height: 100vh;
