@@ -15,18 +15,21 @@ export class HomePage implements OnInit {
     // },
     {
       title: 'Início',
+      id:'inicio',
       url: '/home/inicio',
       color:'red'
       //icon: 'heart'
     },
     {
       title: 'Quem Somos',
+      id:'quem-somos',
       url: '/home/quem-somos',
       color:'blue'
      // icon: 'paper-plane'     
     }, 
      {
       title: 'Portfólio',
+      id:'portfolio',
       url: '/home/portfolio',
       icon: 'heart',
       color: 'yellow'
@@ -34,6 +37,7 @@ export class HomePage implements OnInit {
    
     {
       title: 'Cadastre-se',
+      id:'cadastre-se',
       url: '/home/cadastre-se',
       icon: 'heart',
       color: 'red'
@@ -41,12 +45,14 @@ export class HomePage implements OnInit {
     {
       title: 'Plataforma',
       url: '/home/plataforma',
+      id:'plataforma',
       icon: 'heart',
       color: 'blue'
     },  
     {
       title: 'Fale Conosco',
       url: '/home/fale-conosco',
+      id:'fale-conosco',
       icon: 'heart',
       color: 'yellow'
     }
@@ -63,12 +69,23 @@ export class HomePage implements OnInit {
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
-  constructor() { }
+  constructor() { 
+    const path = window.location.pathname.split('pages')[0];
+    let x = path.split('/home/')[1];
+    console.log(x)
+    if (x !== undefined) {
+      this.selectedIndex = this.appPages.findIndex(page => page.id.toLowerCase() === x.toLowerCase());
+    }
 
-  ngOnInit() {
-
+    console.log(this.selectedIndex)
   }
 
-  
+  ngOnInit() {
+    
+  }
+
+  get isMobile() {
+    return window.innerWidth <= 575;
+  }
 
 }
