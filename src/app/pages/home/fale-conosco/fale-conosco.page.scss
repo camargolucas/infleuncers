@@ -36,6 +36,17 @@ ion-content {
   .miolo{
     position: absolute;
     left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+
+
+    .logo{
+      margin-bottom: 4vh;
+      img{
+        width: 17vw;
+      }
+    }
 
     ion-chip{
       height: 15vh;
@@ -51,7 +62,11 @@ ion-content {
       display: flex;
       justify-content: flex-start;
       margin-bottom: 2vh;
-      margin-left: 5vh;
+      
+
+      img{
+        margin-right: 1.5vw;
+      }
 
 
       ion-chip{

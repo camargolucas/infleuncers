@@ -3,11 +3,14 @@
   <ion-menu contentId="main">
     <ion-content>
       <ion-list id="inbox-list">
-        <!--  <ion-list-header>Inspread</ion-list-header> -->
+        <ion-list-header class="header-logo">
+          <img class="logo" src="/assets/images/logo/logo_pink.svg">
+        </ion-list-header> 
         <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
           <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
             detail="false" [class.selected]="selectedIndex == i">
             <!--   <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon> -->
+            
             <ion-text>
               <div class="traço" ngClass="{{p.color + '-background'}}"></div>
               <div ngClass="{{p.color}}">

@@ -14,7 +14,7 @@ export class HomePage implements OnInit {
     //   icon: 'mail'
     // },
     {
-      title: 'Inicio',
+      title: 'Início',
       url: '/home/inicio',
       color:'red'
       //icon: 'heart'
