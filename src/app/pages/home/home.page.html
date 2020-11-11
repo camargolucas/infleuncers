@@ -1,5 +1,5 @@
 
-<ion-split-pane when="md" autoHide="false" contentId="main">
+<ion-split-pane *ngIf="!isMobile" when="md" autoHide="false" contentId="main">
   
   <!--  the side menu  -->
   <ion-menu contentId="main">
@@ -30,6 +30,52 @@
   <ion-content id="main">
     <ion-router-outlet></ion-router-outlet>
   </ion-content>
-  <!-- the main content -->
 
 </ion-split-pane>
+
+
+<ion-header  [translucent]="true" class="ion-no-border" *ngIf="isMobile" >
+  <ion-toolbar class="mobile-header">
+    <ion-buttons slot="start">
+      <img src="/assets/images/logo/logo_pink.svg">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button mode="ios"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu *ngIf="isMobile" contentId="main">
+    
+  <ion-content>
+    <ion-list id="inbox-list">
+      <ion-list-header class="header-logo-mobile">
+        <img class="logo" src="/assets/images/logo/logo_pink.svg">
+      </ion-list-header> 
+      <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+        <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+          detail="false" [class.selected]="selectedIndex == i">
+          <!--   <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon> -->
+          
+          <ion-text>
+            <div class="traço" ngClass="{{p.color + '-background'}}"></div>
+            <div ngClass="{{p.color}}">
+              {{ p.title }}
+            </div>
+          </ion-text>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+
+  </ion-content>
+</ion-menu>
+
+<ion-content *ngIf="isMobile" id="main">
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
+
+
+
+
+  <!-- the main content -->
+

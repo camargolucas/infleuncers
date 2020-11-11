@@ -9,13 +9,20 @@ ion-menu ion-content {
     --padding-bottom: 20px;
   }
   
-  ion-menu.md ion-list {
-    padding: 20px 0;
-  }
+.mobile-header{
+  --background: #f7f7f7;
+
   
+  img{
+    width: 100px;
+    margin: 5px;
+  }
+}
+
   ion-menu.md ion-list-header,
   ion-menu.md ion-note {
     padding-left: 10px;
+    padding-bottom: 20px
   }
   
   ion-menu.md ion-list#inbox-list {
@@ -157,6 +164,13 @@ ion-menu ion-content {
     img{
       width: 11vw;
     }
+  }
+
+  .header-logo-mobile{
+    img{
+      width: 150px
+    }
+   
   }
 
 

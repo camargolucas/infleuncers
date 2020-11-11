@@ -20,4 +20,8 @@ export class InicioPage implements OnInit {
   ngOnInit() {
   }
 
+  get isMobile() {
+    return window.innerWidth <= 575;
+  }
+
 }
