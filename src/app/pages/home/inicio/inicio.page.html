@@ -129,6 +129,124 @@
 
 </ion-content>
 
-<ion-content *ngIf="isMobile">
+<ion-content class="mobile" *ngIf="isMobile">
+    <ion-row class="first-text-mobile">
+        <ion-col>
+        <div class="title-mobile">
+            <ion-text class="marketing">Marketing</ion-text><br>
+            <ion-text class="escalavel">Escalável</ion-text>
+            para<br> sua
+            <div style="display: inline;">
+                <ion-text class="empresa">Empresa</ion-text>
+                <div class="bloco-rosa"></div>
+            </div>
+        </div>
+        </ion-col>
+    </ion-row>
+    <ion-row class="row-sub-title">
+        <div class="sub-title-mobile">
+            <div class="div-sub-title">
+                <div class="texto-traço">
+                    <span>Identificamos seu publico alvo
+                        <div class="traço"></div>
+                    </span>
+                </div>
+            </div>
 
+            <br>
+
+            <div class="div-sub-title">
+                <div class="texto-traço">
+                    <span>Detectamos as necessidades de divulgação e<br>
+                        <div class="traço"></div>
+                        marketing digital da sua empresa
+                    </span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="div-sub-title">
+                <div class="texto-traço">
+                    <span>Selecionamos as estrelas para influenciar a expansão
+                        <div class="traço"></div>
+                        <br>do seu negocio</span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="div-sub-title">
+                <div class="texto-traço">
+
+                    <span style="text-transform: uppercase;font-weight: bold;font-size: 3vw;">Resultado e visibilidade
+                        para
+                        <div class="traço"></div>
+                        sua empresa</span>
+                </div>
+            </div>          
+        </div>
+    </ion-row>
+    <ion-row>
+        <ion-col class="tripa-depoimentos-mobile">
+            <div class="tripa">
+                <div class="depoimentos">
+                    Depoimentos
+                    <div class="traço"></div>
+                </div>
+            </div>
+            <div class="depoimentos-sub">
+                Veja os depoimentos de alguns de nossos influencers
+            </div>
+
+        </ion-col>
+    </ion-row>
+    <ion-row class="slides">
+        <ion-col>
+            <ion-slides pager="true" [options]="slideOptsMobile">
+                <ion-slide>
+                    <h1>Slide 1</h1>
+                </ion-slide>
+                <ion-slide>
+                    <h1>Slide 2</h1>
+                </ion-slide>
+                <ion-slide>
+                    <h1>Slide 3</h1>
+                </ion-slide>
+            </ion-slides>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col  class="tripa-depoimentos-mobile">
+            <div style="background: #2A69B3; border-color: #2A69B3;" class="tripa">
+                <div class="depoimentos">
+                    Clientes
+                    <div class="traço"></div>
+                </div>
+            </div>
+            <div class="depoimentos-sub">
+                Alguma das empresas que trabalham conosco
+            </div>
+
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-slides pager="true" [options]="slideOptsMobile">
+                <ion-slide>
+                    <h1>Slide 1</h1>
+                </ion-slide>
+                <ion-slide>
+                    <h1>Slide 2</h1>
+                </ion-slide>
+                <ion-slide>
+                    <h1>Slide 3</h1>
+                </ion-slide>
+            </ion-slides>
+        </ion-col>
+    </ion-row>
+    <ion-row class="footer-mobile">
+        <div><a><u>Fale Conosco</u></a> e <a><u>Cadastre-se</u></a></div>
+    </ion-row>
+   
 </ion-content>

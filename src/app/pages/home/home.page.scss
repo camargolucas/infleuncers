@@ -9,15 +9,7 @@ ion-menu ion-content {
     --padding-bottom: 20px;
   }
   
-.mobile-header{
-  --background: #f7f7f7;
 
-  
-  img{
-    width: 100px;
-    margin: 5px;
-  }
-}
 
   ion-menu.md ion-list-header,
   ion-menu.md ion-note {
@@ -162,15 +154,27 @@ ion-menu ion-content {
     padding-bottom: 3vh;
 
     img{
+      
       width: 11vw;
     }
   }
 
   .header-logo-mobile{
     img{
-      width: 150px
+     
+      width: 150px;
     }
    
+  }
+
+  .mobile-header{
+    --background: #f7f7f7;
+  
+    
+    img{
+      width: 100px;
+      margin: 2vh 0 0 2vh;
+    }
   }
 
 
