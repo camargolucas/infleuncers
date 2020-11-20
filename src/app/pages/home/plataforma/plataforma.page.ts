@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-plataforma',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlataformaPage implements OnInit {
 
-  constructor() { }
+  constructor(public cfgService:ConfigService) { }
 
   ngOnInit() {
+    
   }
 
 }

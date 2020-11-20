@@ -2,6 +2,10 @@ ion-content {
     --background: var(--background-color);
   }
 
+  $colorDefault: #305F9D;
+
+  $colorTripa: #FFBB40;
+
 
 .retangulo{
   width: 20vw;
@@ -65,5 +69,46 @@ ion-content {
       font-size: 2vw;
       text-transform: capitalize;
     }
+  }
+}
+
+
+.text-block{
+  background: $colorDefault;
+  color: white;
+  padding: 7vw;
+  text-align: center;
+ 
+  .title{
+    width: 100%;
+    color: $colorTripa;
+    font-weight: bold;
+
+    h2{
+      font-size: 32px;
+    }
+  }
+}
+
+.last{
+  border-radius: 0 0 50px 50px;
+}
+
+.first{
+  border-radius: 50px 50px 0 0;
+}
+
+
+ion-col{
+  padding: 0;
+}
+
+.mobile-tripa{
+  margin: 5vh 0 5vh 0;
+  background: $colorTripa;
+
+  h2{
+    font-weight: bold;
+    font-size: 22px;
   }
 }

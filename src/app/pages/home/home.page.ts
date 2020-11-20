@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-home',
@@ -69,7 +70,7 @@ export class HomePage implements OnInit {
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
-  constructor() { 
+  constructor(public cfgService: ConfigService) { 
     const path = window.location.pathname.split('pages')[0];
     let x = path.split('/home/')[1];
     console.log(x)

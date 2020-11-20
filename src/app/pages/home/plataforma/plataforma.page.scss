@@ -2,6 +2,8 @@ ion-content {
     --background: var(--background-color);
   }
 
+  $color: #315f9d;
+
 .conteudo{
   display: flex;
   width: 80vw;
@@ -52,4 +54,68 @@ ion-content {
       width: 40vw;
       position: absolute;
     }
+}
+
+
+.conteudo-mobile{
+
+
+  .row-title{
+    justify-content: center;
+    color: #f3b63e;
+    font-size: 8vw;
+    font-weight: bold;
+    width: 100%;
+  }
+ 
+
+  .cards{
+
+
+    ion-card{
+      --color:white;
+      background:$color;
+      text-align: center;
+      font-size: 20px;
+      
+
+      ion-card-title{
+        text-align: center;
+        color: white;
+        font-size: 25px;
+      }
+
+      ion-card-content{
+        font-size: 20px;
+      }
+    }
+
+    .pesquisa{
+      height: 100%;
+      max-height: 70vh;
+    }
+
+    .perfis{
+      height: 100%;
+      max-height: 70vh;
+    }
+
+    .gerenciamento{
+      height: 100%;
+      max-height: 60vh;
+    }
+
+    .divulgacao{
+      height: 100%;
+      max-height: 60vh;
+    }
+
+    .analise{
+      max-height: 60vh;
+      height: 100%;
+    }
+
+
+  }
+
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { MissaoModalPage } from 'src/app/modals/missao-modal/missao-modal.page';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-quem-somos',
@@ -9,11 +10,14 @@ import { MissaoModalPage } from 'src/app/modals/missao-modal/missao-modal.page';
 })
 export class QuemSomosPage implements OnInit {
 
-  constructor(private modal:ModalController) { }
+  constructor(private modal:ModalController, public cfgService:ConfigService) { }
 
   ngOnInit() {
   }
 
+  get isMobile() {
+    return window.innerWidth <= 575;
+  }
 
  async openModal(strModal){
     const modal = await this.modal.create({

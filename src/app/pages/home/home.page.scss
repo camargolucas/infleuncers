@@ -168,12 +168,12 @@ ion-menu ion-content {
   }
 
   .mobile-header{
-    --background: #f7f7f7;
+    --background: var(--background-color);
   
     
     img{
       width: 100px;
-      margin: 2vh 0 0 2vh;
+      margin: 2vh 0 2vh 2vh;
     }
   }
 

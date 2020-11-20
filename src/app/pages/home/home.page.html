@@ -1,5 +1,5 @@
 
-<ion-split-pane *ngIf="!isMobile" when="md" autoHide="false" contentId="main">
+<ion-split-pane *ngIf="!cfgService.isMobile" when="md" autoHide="false" contentId="main">
   
   <!--  the side menu  -->
   <ion-menu contentId="main">
@@ -34,7 +34,7 @@
 </ion-split-pane>
 
 
-<ion-header  [translucent]="true" class="ion-no-border" *ngIf="isMobile" >
+<ion-header  [translucent]="true" class="ion-no-border" *ngIf="cfgService.isMobile" >
   <ion-toolbar class="mobile-header">
     <ion-buttons slot="start">
       <img src="/assets/images/logo/logo_pink.svg">
@@ -45,7 +45,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-menu *ngIf="isMobile" contentId="main">
+<ion-menu *ngIf="cfgService.isMobile" contentId="main">
     
   <ion-content>
     <ion-list id="inbox-list">
@@ -70,7 +70,7 @@
   </ion-content>
 </ion-menu>
 
-<ion-content *ngIf="isMobile" id="main">
+<ion-content *ngIf="cfgService.isMobile" id="main">
   <ion-router-outlet></ion-router-outlet>
 </ion-content>
 
