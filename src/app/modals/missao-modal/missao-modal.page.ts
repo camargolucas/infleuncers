@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-missao-modal',
@@ -33,7 +34,7 @@ export class MissaoModalPage implements OnInit {
       }
     }
 
-  constructor() { }
+  constructor(public cfConfig: ConfigService) { }
 
   ngOnInit() {
 

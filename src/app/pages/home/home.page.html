@@ -2,7 +2,7 @@
 <ion-split-pane *ngIf="!cfgService.isMobile" when="md" autoHide="false" contentId="main">
   
   <!--  the side menu  -->
-  <ion-menu contentId="main">
+  <ion-menu  contentId="main">
     
     <ion-content>
       <ion-list id="inbox-list">
@@ -39,13 +39,17 @@
     <ion-buttons slot="start">
       <img src="/assets/images/logo/logo_pink.svg">
     </ion-buttons>
-    <ion-buttons slot="end">
+    <ion-buttons  slot="end">
+      <ion-button class="button-plataforma-mobile" fill="clear">
+        <ion-icon name="exit-outline"></ion-icon>
+        Plataforma
+      </ion-button>
       <ion-menu-button mode="ios"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-menu *ngIf="cfgService.isMobile" contentId="main">
+<ion-menu side="end" *ngIf="cfgService.isMobile" contentId="main">
     
   <ion-content>
     <ion-list id="inbox-list">

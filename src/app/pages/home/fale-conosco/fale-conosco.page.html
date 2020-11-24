@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content *ngIf="!cfService.isMobile">
     <div class="conteudo">
         <div class="miolo">
             <div style="padding-left: 2vw;">
@@ -17,15 +17,56 @@
 
         </div>
 
-
         <div class="div-img">
             <img src="/assets/images/fale-conosco.png">
         </div>
     </div>
 </ion-content>
-<ion-footer class="ion-no-border">
+
+
+
+
+
+
+
+
+<ion-content  *ngIf="cfService.isMobile">
+    <ion-row style="margin-top: 3vh;">
+        <ion-col class="title-mobile">Fale Conosco</ion-col>
+    </ion-row>
+    <ion-row class="row-social-media-mobile">
+        <div class="social-media-mobile">
+            <img src="/assets/images/facebook-logo.svg">
+            <img src="/assets/images/instagram-logo.svg">
+            <img src="/assets/images/linkedin-logo.svg">
+        </div>
+    </ion-row>
+    <ion-row style="justify-content: center;">
+        <ion-chip class="chip-mobile">
+            <span><b>E-mail:</b><br>Contato@id.tec.br</span>
+        </ion-chip>
+    </ion-row>
+    <ion-row style="justify-content: flex-end;">
+        <img class="img-mobile" src="/assets/images/fale-conosco.png">
+    </ion-row>
+    <ion-footer *ngIf="cfService.isMobile" class="ion-no-border footer-mobile">
+        <ion-toolbar>
+           InSpread Digital 2020 - Todos os direitos reservados - Termos de uso - Politica de privacidade
+          
+        </ion-toolbar>    
+    </ion-footer>
+</ion-content>
+
+
+
+<ion-footer *ngIf="!cfService.isMobile" class="ion-no-border ion-footer">
     <ion-toolbar>
         <ion-title>InSpread Digital 2020 - Todos os direitos reservados - Termos de uso - Politica de privacidade
         </ion-title>
     </ion-toolbar>
 </ion-footer>
+
+
+
+
+

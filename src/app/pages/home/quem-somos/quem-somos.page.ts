@@ -22,10 +22,12 @@ export class QuemSomosPage implements OnInit {
  async openModal(strModal){
     const modal = await this.modal.create({
       component: MissaoModalPage,
-      cssClass: `modal-${strModal}`,
+      cssClass: this.isMobile?'modal-mobile':`modal-${strModal}`,
       componentProps: {
         'nomeModal': strModal,       
-      }
+      },
+      mode:"ios"
+
     })
 
     

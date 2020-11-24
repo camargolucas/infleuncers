@@ -1,4 +1,4 @@
-<div ngClass="{{'conteudo-' + nomeModal}}">
+<div *ngIf="!cfConfig.isMobile" ngClass="{{'conteudo-' + nomeModal}}">
   <div class="text">
     <div class="title">
       <div class="traço"></div>{{modals[nomeModal].titulo}}
@@ -9,4 +9,16 @@
   </div>
   <img src={{modals[nomeModal].img}}>
 
+</div>
+
+
+<div class="conteudo-mobile" *ngIf="cfConfig.isMobile">
+  <div class="text">
+    <div class="title">
+      <div class="traço"></div>{{modals[nomeModal].titulo}}
+    </div>
+    <div class="body" [innerHTML]="modals[nomeModal].txt">
+
+    </div>
+  </div>
 </div>

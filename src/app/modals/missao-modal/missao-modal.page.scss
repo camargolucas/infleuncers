@@ -145,3 +145,37 @@ $traco-color: #305F9D;
     }
 
 }
+
+
+.conteudo-mobile{
+    $font-title-mobile:6vw;
+    $traco-width-mobile:0.5vw;
+
+    .body{
+        text-align: center;
+        padding-top: 1.5vh;
+        color: #818181;
+
+        .ultra-bold{
+            font-weight: 1000;
+        }
+    }
+
+    .title{
+        font-size:$font-title-mobile;
+        color: $traco-color;
+        font-weight: $font-weight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+
+        .traço{
+            height: 3.8vh;
+            margin-right: $traco-margin-right;              
+            width: 0.7vw;
+            background:$traco-color;
+        }
+
+    }
+}
