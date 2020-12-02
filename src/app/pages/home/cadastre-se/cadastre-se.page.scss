@@ -13,3 +13,36 @@ ion-content {
       height: 100vh;
     }
 }
+
+//
+
+
+
+
+
+.col-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  padding: 2vw;
+  height: 60vh;
+  background: #EE4367;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 27vw;
+}
+
+.circle{
+  border: solid 1px red;
+  border-radius: 100%;
+  left: 4vw;
+  position: absolute;
+  top: 40vh;
+  height: 150px;
+  width: 150px;
+  
+}

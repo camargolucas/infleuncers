@@ -34,7 +34,7 @@
 </ion-split-pane>
 
 
-<ion-header  [translucent]="true" class="ion-no-border" *ngIf="cfgService.isMobile" >
+<ion-header  class="ion-no-border" *ngIf="cfgService.isMobile" >
   <ion-toolbar class="mobile-header">
     <ion-buttons slot="start">
       <img src="/assets/images/logo/logo_pink.svg">
@@ -49,7 +49,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-menu side="end" *ngIf="cfgService.isMobile" contentId="main">
+<ion-menu type="overlay" side="end" *ngIf="cfgService.isMobile" contentId="main">
     
   <ion-content>
     <ion-list id="inbox-list">
