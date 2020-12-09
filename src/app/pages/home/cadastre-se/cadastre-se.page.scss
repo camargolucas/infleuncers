@@ -16,33 +16,62 @@ ion-content {
 
 //
 
+.title{
+  font-size: 2.5vw;
+  color: #EE4367;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.btn-enviar{
+  display: flex;
+  justify-content: flex-end;
+
+  ion-button{
+      color: white;
+      text-transform: inherit;
+      font-size: 1vw;
+  }
+}
 
 
+textarea{
+  resize: none !important;
+}
+
+textarea.mat-input-element{
+  height: 18vh !important;
+}
 
 
 .col-form{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .form{
   padding: 2vw;
-  height: 60vh;
   background: #EE4367;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   width: 27vw;
+  font-size: 1vw;
+
 }
 
 .circle{
-  border: solid 1px red;
-  border-radius: 100%;
-  left: 4vw;
   position: absolute;
+  height: 20vh;
+  width: 30vh;
+  left: 7px;
   top: 40vh;
-  height: 150px;
-  width: 150px;
+  
+  img{
+    height: auto;
+  }
   
 }

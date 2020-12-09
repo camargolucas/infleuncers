@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content *ngIf="!cfService.isMobile">
   <div class="conteudo">
     <div class="div-img">
       <img src="/assets/images/portfolio.png">
@@ -40,4 +40,9 @@
       <img src="/assets/images/barra-amarela.png">
     </div>
   </div>
+</ion-content>
+
+
+<ion-content *ngIf="cfService.isMobile">
+
 </ion-content>

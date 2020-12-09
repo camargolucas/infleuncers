@@ -1,35 +1,58 @@
-<ion-content>
-
-
-<ion-row>
+<ion-content *ngIf="!cfService.isMobile">
+  <ion-row>
     <ion-col class="col-form">
-        <form class="form">
-            <mat-form-field appearance="fill">
-                <mat-label>Favorite food</mat-label>
-                <input matInput placeholder="Ex. Pizza">
-              </mat-form-field>
+      <div class="title">
+        <div>Cadastre-se</div>
+      </div>
 
-              <mat-form-field appearance="fill">
-                <mat-label>Favorite food</mat-label>
-                <input matInput placeholder="Ex. Pizza">
-              </mat-form-field>
+      <form class="form">
+        <div class="field">
+          <mat-form-field class="field" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. jonas@mail.com" />
+          </mat-form-field>
+        </div>
 
-              <mat-form-field appearance="fill">
-                <mat-label>Favorite food</mat-label>
-                <input matInput placeholder="Ex. Pizza">
-              </mat-form-field>
 
-              <mat-form-field appearance="fill">
-                <mat-label>Favorite food</mat-label>
-                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-              </mat-form-field>
-        </form>
+        <div class="field">
+          <mat-form-field class="field" appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Ex. Jonas" />
+          </mat-form-field>
+        </div>
+
+
+        <div class="field">
+          <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Telefone</mat-label>
+            <input matInput placeholder="Ex. 11 99111 4032" />
+          </mat-form-field>
+        </div>
+
         
+        <mat-form-field appearance="fill">
+          <mat-label>Mensagem</mat-label>
+          <textarea
+            matInput
+            placeholder="Ex. Gostaria de conhecer mais sobre voces" maxlength="150"
+          ></textarea>
+        </mat-form-field>
+
+        <div class="btn-enviar">
+          <ion-button fill="clear">Enviar</ion-button>
+        </div>
+      </form>
     </ion-col>
     <ion-col class="image">
-        <div class="circle"></div>
-        <img src="/assets/images/cadastre-se.png">
+      <div class="circle">
+        <img src="/assets/images/circle-pink.svg" />
+      </div>
+
+      <img src="/assets/images/cadastre-se.png" />
     </ion-col>
-</ion-row>
+  </ion-row>
+</ion-content>
+
+<ion-content *ngIf="cfService.isMobile">
 
 </ion-content>
