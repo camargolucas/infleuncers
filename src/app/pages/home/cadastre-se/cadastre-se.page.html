@@ -13,7 +13,6 @@
           </mat-form-field>
         </div>
 
-
         <div class="field">
           <mat-form-field class="field" appearance="fill">
             <mat-label>Nome</mat-label>
@@ -21,20 +20,19 @@
           </mat-form-field>
         </div>
 
-
         <div class="field">
-          <mat-form-field style="width: 100%;" appearance="fill">
+          <mat-form-field style="width: 100%" appearance="fill">
             <mat-label>Telefone</mat-label>
             <input matInput placeholder="Ex. 11 99111 4032" />
           </mat-form-field>
         </div>
 
-        
         <mat-form-field appearance="fill">
           <mat-label>Mensagem</mat-label>
           <textarea
             matInput
-            placeholder="Ex. Gostaria de conhecer mais sobre voces" maxlength="150"
+            placeholder="Ex. Gostaria de conhecer mais sobre voces"
+            maxlength="150"
           ></textarea>
         </mat-form-field>
 
@@ -54,5 +52,46 @@
 </ion-content>
 
 <ion-content *ngIf="cfService.isMobile">
+ 
+    <img class="background-mobile" src="/assets/images/mobile/cadastre-mobile.png" />
+    <div class="div-title">
+      <div class="title-mobile">Faça seu Cadastro</div>
+      <div class="sub-title">INSPREAD-SE</div>
+    </div>
+    <form class="form-mobile">
+      <div class="field">
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Ex. jonas@mail.com" />
+        </mat-form-field>
+      </div>
 
+      <div class="field">
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Ex. Jonas" />
+        </mat-form-field>
+      </div>
+
+      <div class="field">
+        <mat-form-field style="width: 100%" appearance="fill">
+          <mat-label>Telefone</mat-label>
+          <input matInput placeholder="Ex. 11 99111 4032" />
+        </mat-form-field>
+      </div>
+
+      <mat-form-field style="width: 100%" appearance="fill">
+        <mat-label>Mensagem</mat-label>
+        <textarea
+          matInput
+          placeholder="Ex. Gostaria de conhecer mais sobre voces"
+          maxlength="150"
+        ></textarea>
+      </mat-form-field>
+
+      <div class="btn-enviar">
+        <div class="enviar-mobile">Enviar</div>
+      </div>
+    </form>
+  
 </ion-content>

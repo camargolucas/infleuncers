@@ -21,7 +21,7 @@ export class PortfolioPage implements OnInit {
       componentProps: {
         nomeModal: modalStr
       },
-      cssClass: `modal-${modalStr}`
+      cssClass: this.cfService.isMobile?'modal-mobile':`modal-${modalStr}`
     })
 
     modal.present();

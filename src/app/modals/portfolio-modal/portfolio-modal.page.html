@@ -1,4 +1,4 @@
-<ion-content>
+<div *ngIf="!cfService.isMobile">
   <div ngClass="{{'conteudo-' + nomeModal}}">
     <div class="text">
       <div class="title">
@@ -10,4 +10,16 @@
     </div>
     <img src={{modals[nomeModal].img}}>
   </div>
-</ion-content>
+</div>
+
+<div class="conteudo-mobile" *ngIf="cfService.isMobile">
+  <div class="text">
+    <div class="title">
+      <div class="traço"></div>{{modals[nomeModal].titulo}}
+    </div>
+    <div class="body" [innerHTML]="modals[nomeModal].txt">
+
+    </div>
+  </div>
+</div>
+

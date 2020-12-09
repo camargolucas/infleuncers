@@ -1,16 +1,15 @@
 <ion-content *ngIf="!cfService.isMobile">
   <div class="conteudo">
     <div class="div-img">
-      <img src="/assets/images/portfolio.png">
+      <img src="/assets/images/portfolio.png" />
     </div>
     <div class="text-content">
       <div class="text">
         <span>
-          A <ion-text>Inspread Digital</ion-text> é a maior vitrine escalável de marketing de influência do País.
-          Conectamos você ao universo
-          digital e selecionamos as principais estrelas do marketing de influência para apresentar ao mundo o tamanho do
-          seu
-          sonho.
+          A <ion-text>Inspread Digital</ion-text> é a maior vitrine escalável de
+          marketing de influência do País. Conectamos você ao universo digital e
+          selecionamos as principais estrelas do marketing de influência para
+          apresentar ao mundo o tamanho do seu sonho.
         </span>
       </div>
       <div class="subtitle">
@@ -20,29 +19,66 @@
       </div>
       <div class="tripa">
         <ion-button fill="clear" (click)="openModal('digital')">
-          <h2>
-            PEGADA DIGITAL
-          </h2>
+          <h2>PEGADA DIGITAL</h2>
         </ion-button>
         <ion-button fill="clear" (click)="openModal('consultoria')">
-          <h2>
-            CONSULTORIA SOBRE MEDIDA
-          </h2>
+          <h2>CONSULTORIA SOBRE MEDIDA</h2>
         </ion-button>
         <ion-button fill="clear" (click)="openModal('campanhas')">
-          <h2>
-            CAMPANHAS COMPLETAS
-          </h2>
+          <h2>CAMPANHAS COMPLETAS</h2>
         </ion-button>
       </div>
     </div>
     <div class="barra-amarela">
-      <img src="/assets/images/barra-amarela.png">
+      <img src="/assets/images/barra-amarela.png" />
     </div>
   </div>
 </ion-content>
 
-
 <ion-content *ngIf="cfService.isMobile">
+  <ion-row class="div-title">
+    <ion-col class="title-mobile">Portfólio</ion-col>
+  </ion-row>
 
+  <ion-row>
+    <img src="/assets/images/portfolio.png" />
+  </ion-row>
+
+  <ion-row class="text-mobile">
+    <span style="margin-bottom: 2vh;">
+      A <ion-text>Inspread Digital</ion-text> é a maior vitrine escalável de
+      marketing de influência do País.</span
+    >
+    <span>
+      Conectamos você ao universo digital e selecionamos as principais estrelas
+      do marketing de influência para apresentar ao mundo o tamanho do seu
+      sonho.
+    </span>
+  </ion-row>
+  <ion-row style="margin-bottom: 2vh;" >
+    <ion-col class="inspread">
+      Inspread-se
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="tripa-mobile">
+  
+      <ion-button fill="clear" (click)="openModal('digital')">
+        PEGADA DIGITAL
+      </ion-button>
+    
+  
+      <ion-button fill="clear" (click)="openModal('consultoria')">
+       CONSULTORIA
+      </ion-button>
+  
+   
+      <ion-button fill="clear" (click)="openModal('campanhas')">
+        CAMPANHAS 
+      </ion-button>
+   
+  </ion-row>
+  <div class="barra-amarela-mobile">
+    <img src="/assets/images/barra-amarela.png" />
+  </div>
 </ion-content>

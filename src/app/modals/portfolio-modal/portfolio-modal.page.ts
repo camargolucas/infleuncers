@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-portfolio-modal',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PortfolioModalPage implements OnInit {
   @Input() nomeModal:string;
-  constructor() { }
+  constructor(public cfService:ConfigService) { }
 
   modals = {
     digital:{

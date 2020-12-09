@@ -69,3 +69,56 @@ ion-content {
       color: white;
     }
   }
+
+
+
+  .div-title{
+    text-align: center;
+    margin: 2vh;
+
+    .title-mobile{
+      color: #305F9D;
+      font-size: 7vw;
+     
+    }
+  }
+
+
+  .text-mobile{
+
+    color: #757575;
+    font-size: 5vw;
+    text-align: center;
+    margin: 5vw 3vw 5vw 10vw;
+
+   
+  }
+
+  .barra-amarela-mobile{
+
+    img{
+      position: absolute;
+      bottom: 0;
+      height: 33vh;
+      top: 34vh;
+    }
+   
+  }
+
+  .inspread{
+    text-align: center;
+    color: #F3B63E;
+    font-size: 6vw;
+  }
+
+  .tripa-mobile{
+    display: flex;
+    background: #305F9D;
+    border-radius: 0 0 0 5vh;
+    justify-content: center;
+    ion-button{
+      font-size: 12px;
+      color: white;
+      max-width: 105px;
+    }
+  }
