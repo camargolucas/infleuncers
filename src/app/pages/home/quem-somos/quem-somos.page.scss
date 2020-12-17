@@ -107,8 +107,10 @@ ion-col{
   margin: 5vh 0 5vh 0;
   background: $colorTripa;
 
-  h2{
+  ion-button{
     font-weight: bold;
     font-size: 22px;
+    text-transform: inherit;
   }
+
 }

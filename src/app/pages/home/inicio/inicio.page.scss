@@ -95,7 +95,7 @@ ion-content {
     text-align: center;
     width: 50vw;
     text-align: center;
-    border: solid 1px red;
+    border: solid 1px #ee3561;
     height: 6vh;
     color: white;
     font-weight: bold;
@@ -153,7 +153,9 @@ ion-content {
 
 .mobile{
 
-
+  .img-slide-mobile{
+    max-width:100%;
+  }
 
   .first-text-mobile{
     margin: 8vh 0 4vh 0;
@@ -207,7 +209,7 @@ ion-content {
     text-align: right;
     width: 100%;
     color: #818181;
-    font-size: 3vw;
+    font-size: 3.5vw;
 
     .div-sub-title {
       display: flex;
@@ -241,11 +243,11 @@ ion-content {
       text-align: center;
       width: 70vw;
       text-align: center;
-      border: solid 1px red;
-      height: 3vh;
+      border: solid 1px #ee3561;
+      height: 4vh;
       color: white;
       font-weight: bold;
-      font-size: 3.5vw;
+      font-size: 4vw;
       background: #ee3561;
       border-radius: 50px;
       text-transform: uppercase;
@@ -256,8 +258,8 @@ ion-content {
         justify-content: flex-start;
         align-items: flex-end;
         .traço {
-          width: 3vw;
-          height: 0.2vh;
+          width: 6vw;
+          height: 0.3vh;
           background: white;
           position: absolute;
           opacity: 0.6;
@@ -268,7 +270,7 @@ ion-content {
     .depoimentos-sub {
       color: #818181;
       padding-top: 1vh;
-      font-size: 2.8vw;
+      font-size: 3.5vw;
     }
   }
 

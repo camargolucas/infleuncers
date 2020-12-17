@@ -10,10 +10,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ConfigService } from './services/config.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TelefonePipe } from './pipe/telefone.pipe';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TelefonePipe],
   entryComponents: [],
   imports: [
     BrowserModule,

@@ -103,6 +103,35 @@
    
 }
 
+.radio-button-mobile{
+    .mat-radio-button{
+        margin-left: 10vw !important;
+        margin-bottom: 1vh !important;
+        label{
+            color: white !important;
+        }
+    }
+}
+
+
+.radio-button{
+    .mat-radio-button{
+        margin-left: 3vw !important;
+        margin-bottom: 1vh !important;
+        label{
+            color: white !important;
+        }
+    }
+}
+
+
+.mat-radio-inner-circle{
+    background-color: white !important;
+}
+
+.mat-radio-outer-circle{
+    border-color: white !important;
+}
   
 
 .field{

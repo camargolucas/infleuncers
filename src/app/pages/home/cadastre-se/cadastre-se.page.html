@@ -5,31 +5,37 @@
         <div>Cadastre-se</div>
       </div>
 
-      <form class="form">
+      <form [formGroup]="formGroupDesktop" class="form">
+        <div class="radio-button">
+        <mat-radio-group [(ngModel)]="radioButton"  formControlName="tipo"  aria-label="Select an option">
+          <mat-radio-button value="influencer">Influenciador</mat-radio-button>
+          <mat-radio-button value="company">Empresa</mat-radio-button>
+        </mat-radio-group>
+      </div>
         <div class="field">
           <mat-form-field class="field" appearance="fill">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Ex. jonas@mail.com" />
+            <input formControlName="email" matInput placeholder="Ex. jonas@mail.com" />
           </mat-form-field>
         </div>
 
         <div class="field">
           <mat-form-field class="field" appearance="fill">
             <mat-label>Nome</mat-label>
-            <input matInput placeholder="Ex. Jonas" />
+            <input formControlName="nome" matInput placeholder="Ex. Jonas" />
           </mat-form-field>
         </div>
 
         <div class="field">
           <mat-form-field style="width: 100%" appearance="fill">
             <mat-label>Telefone</mat-label>
-            <input matInput placeholder="Ex. 11 99111 4032" />
+            <input formControlName="telefone" matInput placeholder="Ex. 11 99111 4032" />
           </mat-form-field>
         </div>
 
         <mat-form-field appearance="fill">
           <mat-label>Mensagem</mat-label>
-          <textarea
+          <textarea formControlName="mensagem"
             matInput
             placeholder="Ex. Gostaria de conhecer mais sobre voces"
             maxlength="150"
@@ -52,37 +58,46 @@
 </ion-content>
 
 <ion-content *ngIf="cfService.isMobile">
- 
+    
     <img class="background-mobile" src="/assets/images/mobile/cadastre-mobile.png" />
     <div class="div-title">
       <div class="title-mobile">Faça seu Cadastro</div>
       <div class="sub-title">INSPREAD-SE</div>
     </div>
-    <form class="form-mobile">
+
+   
+    <form [formGroup]="formgroup" class="form-mobile">
+      <div class="radio-button-mobile">
+      <mat-radio-group [(ngModel)]="radioButton"  formControlName="tipo"  aria-label="Select an option">
+        <mat-radio-button value="influencer">Influenciador</mat-radio-button>
+        <mat-radio-button value="company">Empresa</mat-radio-button>
+      </mat-radio-group>
+    </div>
       <div class="field">
-        <mat-form-field class="field" appearance="fill">
+        <mat-form-field  class="field" appearance="fill">
           <mat-label>Email</mat-label>
-          <input matInput placeholder="Ex. jonas@mail.com" />
+          <input formControlName="email"  matInput placeholder="Ex. jonas@mail.com" />
         </mat-form-field>
       </div>
 
       <div class="field">
-        <mat-form-field class="field" appearance="fill">
+        <mat-form-field  class="field" appearance="fill">
           <mat-label>Nome</mat-label>
-          <input matInput placeholder="Ex. Jonas" />
+          <input formControlName="nome" matInput placeholder="Ex. Jonas" />
         </mat-form-field>
       </div>
 
       <div class="field">
         <mat-form-field style="width: 100%" appearance="fill">
           <mat-label>Telefone</mat-label>
-          <input matInput placeholder="Ex. 11 99111 4032" />
+          <input formControlName="telefone"  matInput placeholder="Ex. 11 99111 4032"  />
+         
         </mat-form-field>
       </div>
 
-      <mat-form-field style="width: 100%" appearance="fill">
+      <mat-form-field  style="width: 100%" appearance="fill">
         <mat-label>Mensagem</mat-label>
-        <textarea
+        <textarea formControlName="mensagem"
           matInput
           placeholder="Ex. Gostaria de conhecer mais sobre voces"
           maxlength="150"

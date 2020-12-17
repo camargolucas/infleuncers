@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -9,7 +9,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatInputModule } from '@angular/material/input';
 import { CadastreSePage } from './cadastre-se.page';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import {MatRadioModule} from '@angular/material/radio';
+import { TelefonePipe } from 'src/app/pipe/telefone.pipe';
 @NgModule({
   imports: [
     CommonModule,
@@ -18,7 +19,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CadastreSePageRoutingModule,
     MatSliderModule,
     MatInputModule,
-    MatFormFieldModule  
+    MatFormFieldModule,
+    MatRadioModule,
+    ReactiveFormsModule,
+    TelefonePipe
+    
     
   ],
   declarations: [CadastreSePage]
