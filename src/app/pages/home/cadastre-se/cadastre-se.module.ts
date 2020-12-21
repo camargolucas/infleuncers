@@ -11,6 +11,7 @@ import { CadastreSePage } from './cadastre-se.page';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatRadioModule} from '@angular/material/radio';
 import { TelefonePipe } from 'src/app/pipe/telefone.pipe';
+import { NgxMaskModule } from 'ngx-mask';
 @NgModule({
   imports: [
     CommonModule,
@@ -22,7 +23,7 @@ import { TelefonePipe } from 'src/app/pipe/telefone.pipe';
     MatFormFieldModule,
     MatRadioModule,
     ReactiveFormsModule,
-    TelefonePipe
+    NgxMaskModule.forRoot(),
     
     
   ],

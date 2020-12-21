@@ -29,7 +29,7 @@
         <div class="field">
           <mat-form-field style="width: 100%" appearance="fill">
             <mat-label>Telefone</mat-label>
-            <input formControlName="telefone" matInput placeholder="Ex. 11 99111 4032" />
+            <input formControlName="telefone" type="tel" mask="(00) 0 0000 0000" matInput placeholder="Ex. 11 99111 4032" />
           </mat-form-field>
         </div>
 
@@ -76,7 +76,7 @@
       <div class="field">
         <mat-form-field  class="field" appearance="fill">
           <mat-label>Email</mat-label>
-          <input formControlName="email"  matInput placeholder="Ex. jonas@mail.com" />
+          <input formControlName="email"  matInput placeholder="Ex. jonas@mail.com" />          
         </mat-form-field>
       </div>
 
@@ -90,7 +90,7 @@
       <div class="field">
         <mat-form-field style="width: 100%" appearance="fill">
           <mat-label>Telefone</mat-label>
-          <input formControlName="telefone"  matInput placeholder="Ex. 11 99111 4032"  />
+          <input  formControlName="telefone" type="tel" mask="(00) 0 0000 0000"  matInput placeholder="Ex. 11 99111 4032"  />
          
         </mat-form-field>
       </div>
@@ -105,7 +105,7 @@
       </mat-form-field>
 
       <div class="btn-enviar">
-        <div class="enviar-mobile">Enviar</div>
+        <div (click)="enviar()" class="enviar-mobile">Enviar</div>
       </div>
     </form>
   

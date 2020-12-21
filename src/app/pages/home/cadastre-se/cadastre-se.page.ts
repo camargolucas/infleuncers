@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
@@ -17,22 +17,31 @@ export class CadastreSePage implements OnInit {
 
     if (this.cfService.isMobile){
       this.formgroup = new FormGroup({
-        nome: new FormControl(''),
-        email: new FormControl(''),
-        telefone: new FormControl(''),
-        tipo: new FormControl(''),
+        nome: new FormControl('', Validators.required),
+        email: new FormControl('', Validators.compose([Validators.pattern(
+          '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'
+        ), Validators.required])),
+        telefone: new FormControl('', Validators.required),
+        tipo: new FormControl('', Validators.required),
         mensagem: new FormControl('')
       })
     }else{
       this.formGroupDesktop = new FormGroup({
-        nome: new FormControl(''),
-        email: new FormControl(''),
-        telefone: new FormControl(''),
-        tipo: new FormControl(''),
+        nome: new FormControl('', Validators.required),
+        email: new FormControl('', Validators.compose([Validators.pattern(
+          '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'
+        ), Validators.required])),
+        telefone: new FormControl('', Validators.required),
+        tipo: new FormControl('', Validators.required),
         mensagem: new FormControl('')
       })
     }
    
+  }
+
+
+  enviar(){
+    console.log(this.formgroup)
   }
 
 

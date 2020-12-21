@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ConfigService } from './services/config.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TelefonePipe } from './pipe/telefone.pipe';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { TelefonePipe } from './pipe/telefone.pipe';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     StatusBar,
