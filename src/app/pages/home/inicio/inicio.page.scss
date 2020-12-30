@@ -2,6 +2,24 @@ ion-content {
   --background: var(--background-color);
 }
 
+.arrow{
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  z-index: 2;
+
+  ion-button{
+
+    ion-icon{
+      font-size: 25px;
+    }
+  }
+}
+
 .first-text {
   position: absolute;
   left: 9vw;
@@ -201,6 +219,14 @@ ion-content {
       }
     }
 }
+
+.slide-patrocinadores{
+  ion-slide{
+    height: 60px;
+  }
+}
+
+
 
  .row-sub-title{
 

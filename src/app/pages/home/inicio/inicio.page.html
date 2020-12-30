@@ -78,7 +78,15 @@
     </ion-row>
     <ion-row class="slides">
         <ion-col>
-            <ion-slides pager="true" [options]="slideOpts">
+            <div class="arrow">
+                <ion-button (click)="prevSlide()" fill="clear">
+                    <ion-icon name="chevron-back"></ion-icon>
+                </ion-button>
+                <ion-button  (click)="nextSlide()" fill="clear">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </ion-button>
+            </div>
+            <ion-slides #slideDepoimentos pager="true" [options]="slideOpts">
                 <ion-slide>
                     <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
                 </ion-slide>
@@ -110,21 +118,25 @@
     </ion-row>
     <ion-row>
         <ion-col>
-            <ion-slides pager="true" [options]="slideOpts">
-                <ion-slide>
-                    <h1>Slide 1</h1>
-                </ion-slide>
-                <ion-slide>
-                    <h1>Slide 2</h1>
-                </ion-slide>
-                <ion-slide>
-                    <h1>Slide 3</h1>
-                </ion-slide>
+            <div class="arrow">
+                <ion-button (click)="prevSlide()" fill="clear">
+                    <ion-icon name="chevron-back"></ion-icon>
+                </ion-button>
+                <ion-button  (click)="nextSlide()" fill="clear">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </ion-button>
+            </div>
+            <ion-slides #slidePatrocinadores class="slide-patrocinadores" pager="true" [options]="slideOpts">
+                <ion-slide  *ngFor="let slide of patrocinadoresSlide">
+                    <img [src]="slide.path">
+                </ion-slide>      
             </ion-slides>
+           
+
         </ion-col>
     </ion-row>
     <ion-row class="footer">
-        <div><a><u>Fale Conosco</u></a> e <a><u>Cadastre-se</u></a></div>
+        <!-- <div><a><u>Fale Conosco</u></a> e <a><u>Cadastre-se</u></a></div> -->
     </ion-row>
 
 </ion-content>
@@ -203,7 +215,15 @@
     </ion-row>
     <ion-row class="slides">
         <ion-col>
-            <ion-slides pager="true" [options]="slideOptsMobile">
+            <div class="arrow">
+                <ion-button (click)="prevSlide()" fill="clear">
+                    <ion-icon name="chevron-back"></ion-icon>
+                </ion-button>
+                <ion-button  (click)="nextSlide()" fill="clear">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </ion-button>
+            </div>
+            <ion-slides #slideDepoimentos pager="true" [options]="slideOptsMobile">
                 <ion-slide>
                     <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
                 </ion-slide>
@@ -232,21 +252,23 @@
     </ion-row>
     <ion-row>
         <ion-col>
-            <ion-slides pager="true" [options]="slideOptsMobile">
-                <ion-slide>
-                    <h1>Slide 1</h1>
-                </ion-slide>
-                <ion-slide>
-                    <h1>Slide 2</h1>
-                </ion-slide>
-                <ion-slide>
-                    <h1>Slide 3</h1>
-                </ion-slide>
+            <div class="arrow">
+                <ion-button (click)="prevSlide()" fill="clear">
+                    <ion-icon name="chevron-back"></ion-icon>
+                </ion-button>
+                <ion-button  (click)="nextSlide()" fill="clear">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </ion-button>
+            </div>
+            <ion-slides #slidePatrocinadores pager="true" [options]="slideOptsMobile">
+                <ion-slide *ngFor="let slide of patrocinadoresSlide">
+                    <img [src]="slide.path">
+                </ion-slide>               
             </ion-slides>
         </ion-col>
     </ion-row>
     <ion-row class="footer-mobile">
-        <div><a><u>Fale Conosco</u></a> e <a><u>Cadastre-se</u></a></div>
+        <!-- <div><a><u>Fale Conosco</u></a> e <a><u>Cadastre-se</u></a></div> -->
     </ion-row>
    
 </ion-content>

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlide, IonSlides } from '@ionic/angular';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
@@ -19,6 +19,54 @@ export class InicioPage implements OnInit {
     },
   };
 
+  slideOptsMobile = {
+    initialSlide: 1,
+    speed: 400,
+    slidesPerView: 1,
+
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  }
+
+
+  patrocinadoresSlide= [
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/adidas1.svg'
+    },
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/adidas2.svg'
+    },
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/arena.svg'
+    },
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/ateliermix.svg'
+    },
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/capadorte.svg'
+    },
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/dumond.svg'
+    },
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/rubronegra.svg'
+    },
+    {
+      id: '',
+      path:'/assets/images/patrocinadores/viauno.svg'
+    }
+
+  ]
+
  /*  slidesPerView: 1,
   noSwipingSelector: this.device.isDevice() ? '' : this.noSwipingSelectorOpts,
   zoom: false,
@@ -37,21 +85,19 @@ export class InicioPage implements OnInit {
     bulletActiveClass: 'banner-pagination-bullet-active',
   },
 } */
-
-  slideOptsMobile = {
-    initialSlide: 1,
-    speed: 400,
-    slidesPerView: 1,
-
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-  }
-
+  @ViewChild('slidePatrocinadores', { read: IonSlides }) slidePatrocinadores: IonSlides; 
+  @ViewChild('slideDepoimentos', { read: IonSlides }) slideDepoimentos: IonSlides; 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  nextSlide(){
+    this.slidePatrocinadores.slideNext();
+  }
+
+  prevSlide(){
+    this.slidePatrocinadores.slidePrev()
   }
 
   get isMobile() {
