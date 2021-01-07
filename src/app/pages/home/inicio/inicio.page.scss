@@ -2,6 +2,18 @@ ion-content {
   --background: var(--background-color);
 }
 
+.text-img{
+  position: absolute;
+  bottom: 0;
+  max-width: 240px;
+  font-size: 14px;
+  color: #2E2D2D;
+  background: rgb(245 245 245 / 65%);
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+
 .arrow{
   position: absolute;
   transform: translate(0, -50%);

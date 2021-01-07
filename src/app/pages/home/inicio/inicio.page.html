@@ -87,15 +87,9 @@
                 </ion-button>
             </div>
             <ion-slides #slideDepoimentos pager="true" [options]="slideOpts">
-                <ion-slide>
-                    <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
-                </ion-slide>
-                <ion-slide>
-                    <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
-                </ion-slide>
-                <ion-slide>
-                    <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
-                </ion-slide>
+                <ion-slide *ngFor="let slide of influencersSlide">
+                    <img [src]="slide.path">
+                </ion-slide>  
             </ion-slides>
         </ion-col>
     </ion-row>
@@ -224,15 +218,10 @@
                 </ion-button>
             </div>
             <ion-slides #slideDepoimentos pager="true" [options]="slideOptsMobile">
-                <ion-slide>
-                    <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
-                </ion-slide>
-                <ion-slide>
-                    <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
-                </ion-slide>
-                <ion-slide>
-                    <img class="img-slide-mobile" src="/assets/images/mobile/slide-1.jpg">
-                </ion-slide>
+                <ion-slide *ngFor="let slide of influencersSlide">
+                    <img style="max-width: 250px" [src]="slide.path">
+                    <div class="text-img">“ Parceria, companhia e entendimento do briefing resumem um pouco do trabalho “</div>
+                </ion-slide>  
             </ion-slides>
         </ion-col>
     </ion-row>

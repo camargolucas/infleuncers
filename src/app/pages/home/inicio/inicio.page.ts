@@ -11,7 +11,7 @@ export class InicioPage implements OnInit {
   slideOpts = {
     initialSlide: 1,
     speed: 400,
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 50,
     autoplay: {
       delay: 5000,
@@ -29,6 +29,25 @@ export class InicioPage implements OnInit {
       disableOnInteraction: false
     },
   }
+
+  influencersSlide=[
+    {
+      id: '',
+      path:'/assets/images/influencers/influencer1.jpeg'
+    },
+    {
+      id: '',
+      path:'/assets/images/influencers/influencer2.jpg'
+    },
+    {
+      id: '',
+      path:'/assets/images/influencers/influencer1.jpeg'
+    },
+    {
+      id: '',
+      path:'/assets/images/influencers/influencer2.jpg'
+    }
+  ]
 
 
   patrocinadoresSlide= [
