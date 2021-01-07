@@ -6,8 +6,8 @@
     
     <ion-content>
       <ion-list id="inbox-list">
-        <ion-list-header class="header-logo">
-          <img class="logo" src="/assets/images/logo/logo_pink.svg">
+        <ion-list-header class="header-logo cursor-pointer">          
+          <img (click)="selectedIndex = 0" [routerLink]="['/home/inicio']"  class="logo " src="/assets/images/logo/logo_pink.svg">
         </ion-list-header> 
         <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
           <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
@@ -37,7 +37,7 @@
 <ion-header  class="ion-no-border" *ngIf="cfgService.isMobile" >
   <ion-toolbar class="mobile-header">
     <ion-buttons slot="start">
-      <img src="/assets/images/logo/logo_pink.svg">
+      <img (click)="selectedIndex = 0" [routerLink]="['/home/inicio']" src="/assets/images/logo/logo_pink.svg">
     </ion-buttons>
     <ion-buttons  slot="end">
       <ion-button class="button-plataforma-mobile" fill="clear">

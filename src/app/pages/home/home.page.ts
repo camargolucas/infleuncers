@@ -78,7 +78,7 @@ export class HomePage implements OnInit {
       this.selectedIndex = this.appPages.findIndex(page => page.id.toLowerCase() === x.toLowerCase());
     }
 
-    console.log(this.selectedIndex)
+   
   }
 
   ngOnInit() {

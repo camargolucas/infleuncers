@@ -96,6 +96,14 @@ export class InicioPage implements OnInit {
     this.slidePatrocinadores.slideNext();
   }
 
+  nextSlideDepo(){
+    this.slideDepoimentos.slideNext();
+  }
+
+  prevSlideDepo(){
+    this.slideDepoimentos.slidePrev()
+  }
+
   prevSlide(){
     this.slidePatrocinadores.slidePrev()
   }
