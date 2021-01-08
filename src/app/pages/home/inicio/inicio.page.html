@@ -89,6 +89,7 @@
             <ion-slides #slideDepoimentos pager="true" [options]="slideOpts">
                 <ion-slide *ngFor="let slide of influencersSlide">
                     <img [src]="slide.path">
+                    <div class="text-img">“ Parceria, companhia e entendimento do briefing resumem um pouco do trabalho “</div>
                 </ion-slide>  
             </ion-slides>
         </ion-col>
@@ -123,6 +124,7 @@
             <ion-slides #slidePatrocinadores class="slide-patrocinadores" pager="true" [options]="slideOpts">
                 <ion-slide  *ngFor="let slide of patrocinadoresSlide">
                     <img [src]="slide.path">
+                    
                 </ion-slide>      
             </ion-slides>
            

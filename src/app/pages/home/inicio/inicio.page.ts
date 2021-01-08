@@ -37,15 +37,15 @@ export class InicioPage implements OnInit {
     },
     {
       id: '',
-      path:'/assets/images/influencers/influencer2.jpg'
-    },
-    {
-      id: '',
-      path:'/assets/images/influencers/influencer1.jpeg'
+      path:'/assets/images/influencers/influencer3.jpg'
     },
     {
       id: '',
       path:'/assets/images/influencers/influencer2.jpg'
+    },
+    {
+      id: '',
+      path:'/assets/images/influencers/influencer4.jpg'
     }
   ]
 
