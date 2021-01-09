@@ -86,10 +86,10 @@
                     <ion-icon name="chevron-forward"></ion-icon>
                 </ion-button>
             </div>
-            <ion-slides #slideDepoimentos pager="true" [options]="slideOpts">
-                <ion-slide *ngFor="let slide of influencersSlide">
+            <ion-slides class="slide-influencers" #slideDepoimentos pager="true" [options]="slideOpts">
+                <ion-slide  *ngFor="let slide of influencersSlide">
                     <img [src]="slide.path">
-                    <div class="text-img">“ Parceria, companhia e entendimento do briefing resumem um pouco do trabalho “</div>
+                    <div class="text-img">“{{slide.depoimento}}“</div>
                 </ion-slide>  
             </ion-slides>
         </ion-col>
@@ -219,10 +219,10 @@
                     <ion-icon name="chevron-forward"></ion-icon>
                 </ion-button>
             </div>
-            <ion-slides #slideDepoimentos pager="true" [options]="slideOptsMobile">
-                <ion-slide *ngFor="let slide of influencersSlide">
-                    <img style="max-width: 250px" [src]="slide.path">
-                    <div class="text-img">“ Parceria, companhia e entendimento do briefing resumem um pouco do trabalho “</div>
+            <ion-slides class="slide-influencers-mobile" #slideDepoimentos pager="true" [options]="slideOptsMobile">
+                <ion-slide  *ngFor="let slide of influencersSlide">
+                    <img [src]="slide.path">
+                    <div class="text-img">“{{slide.depoimento}}“</div>
                 </ion-slide>  
             </ion-slides>
         </ion-col>

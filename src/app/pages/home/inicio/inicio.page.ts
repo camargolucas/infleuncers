@@ -33,19 +33,33 @@ export class InicioPage implements OnInit {
   influencersSlide=[
     {
       id: '',
-      path:'/assets/images/influencers/influencer1.jpeg'
+      path:'/assets/images/influencers/influencer1.jpeg',
+      depoimento:'Respeito e a confiança que passam para nós influenciadores é surreal.'
     },
     {
       id: '',
-      path:'/assets/images/influencers/influencer3.jpg'
+      path:'/assets/images/influencers/influencer3.jpg',
+      depoimento: 'Trabalhar com a ID tem sido fator determinante para dar o próximo passo como influenciadora'
     },
     {
       id: '',
-      path:'/assets/images/influencers/influencer2.jpg'
+      path:'/assets/images/influencers/influencer2.jpg',
+      depoimento: 'Foi muito bom trabalhar esse ano com a InSpread digital, equipe bem organizada, nos auxiliando durante toda a ação e com o pagamento sempre no prazo'
+    },
+   /*  {
+      id: '',
+      path:'/assets/images/influencers/influencer4.jpg',
+      depoimento:''
+    }, */
+    {
+      id: '',
+      path:'/assets/images/influencers/influencer5.jpg',
+      depoimento:'Competencia, parceria e sinceridade.'
     },
     {
       id: '',
-      path:'/assets/images/influencers/influencer4.jpg'
+      path:'/assets/images/influencers/influencer6.jpg',
+      depoimento:'Foi uma experiência única, muito gratificante, me senti realizada.'
     }
   ]
 

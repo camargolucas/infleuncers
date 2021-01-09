@@ -4,13 +4,14 @@ ion-content {
 
 .text-img{
   position: absolute;
-  bottom: 0;
-  max-width: 240px;
-  font-size: 14px;
+  bottom: 12px;
+  max-width: 100%;
+  font-size: 16px;
   color: #2E2D2D;
-  background: rgb(245 245 245 / 65%);
+  background: rgba(245, 245, 245, 0.65);
   padding: 0.5rem;
   margin: 1rem;
+  border-radius: 15px;
 }
 
 
@@ -177,7 +178,16 @@ ion-content {
 
 
 
+.slide-influencers{
 
+  ion-slide{
+
+    img{
+
+      border-radius: 50px;
+    }
+  }
+}
 
 
 
@@ -231,6 +241,27 @@ ion-content {
       }
     }
 }
+
+
+.swiper-slide img{
+  border-radius: 50px !important;
+}
+
+
+
+.slide-influencers-mobile{
+  ion-slide{
+    
+    img{
+      width: 95%;
+      border-radius: 50px;
+    }
+  }
+
+}
+
+
+
 
 .slide-patrocinadores{
   ion-slide{
