@@ -43,7 +43,7 @@
         </mat-form-field>
 
         <div class="btn-enviar">
-          <ion-button fill="clear">Enviar</ion-button>
+          <ion-button [disabled]="btnEnviar" (click)="enviar()" fill="clear">Enviar</ion-button>
         </div>
       </form>
     </ion-col>
@@ -67,7 +67,7 @@
 
    
     <form [formGroup]="formgroup" class="form-mobile">
-      <div class="radio-button-mobile">
+      <div class="radio-button">
       <mat-radio-group [(ngModel)]="radioButton"  formControlName="tipo"  aria-label="Select an option">
         <mat-radio-button value="influencer">Influenciador</mat-radio-button>
         <mat-radio-button value="company">Empresa</mat-radio-button>
@@ -105,7 +105,7 @@
       </mat-form-field>
 
       <div class="btn-enviar">
-        <div (click)="enviar()" class="enviar-mobile">Enviar</div>
+        <ion-button [disabled]="btnEnviar" fill="clear" (click)="enviar()" class="enviar-mobile">Enviar</ion-button>
       </div>
     </form>
   

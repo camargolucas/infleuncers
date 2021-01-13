@@ -39,9 +39,42 @@ export class CadastreSePage implements OnInit {
    
   }
 
-
+  btnEnviar:boolean = false
   enviar(){
-    console.log(this.formgroup)
+   
+
+    this.btnEnviar = true;
+    setTimeout(() => {
+        this.btnEnviar = false;
+    }, 2000);
+    if(this.cfService.isMobile){
+
+      let err = Object.keys(this.formgroup.controls).findIndex(element =>{
+        return this.formgroup.controls[element].status === "INVALID"
+      })
+
+    
+      if (err != -1){
+        console.log('error')
+      }else{
+        console.log('pode seguir chefia')
+      }
+
+
+    }else{
+      let err = Object.keys(this.formGroupDesktop.controls).findIndex(element =>{
+        return this.formGroupDesktop.controls[element].status === "INVALID"
+      })
+
+    
+      if (err != -1){
+        console.log('error')
+      }else{
+        console.log('pode seguir chefia')
+      }
+     
+      
+    }
   }
 
 

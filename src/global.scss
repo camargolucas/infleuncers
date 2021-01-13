@@ -103,18 +103,27 @@
    
 }
 
-.radio-button-mobile{
-    .mat-radio-button{
-        margin-left: 10vw !important;
-        margin-bottom: 1vh !important;
-        label{
-            color: white !important;
+.radio-button{
+
+    .mat-radio-group{
+
+        display: flex !important;
+        justify-content:space-around !important;
+
+        .mat-radio-button{      
+          margin-bottom: 1vh !important;
+          
+            label{
+                color: white !important;
+            }
         }
     }
+
+
 }
 
 
-.radio-button{
+/* .radio-button{
     .mat-radio-button{
         margin-left: 3vw !important;
         margin-bottom: 1vh !important;
@@ -122,7 +131,7 @@
             color: white !important;
         }
     }
-}
+} */
 
 
 .mat-radio-inner-circle{
