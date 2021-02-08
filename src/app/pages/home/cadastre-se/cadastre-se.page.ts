@@ -55,9 +55,11 @@ export class CadastreSePage implements OnInit {
 
     
       if (err != -1){
-        console.log('error')
+        this.cfService.registerUser('').toPromise().then(res => {
+          console.log(res)
+        })
       }else{
-        console.log('pode seguir chefia')
+       
       }
 
 
@@ -68,9 +70,13 @@ export class CadastreSePage implements OnInit {
 
     
       if (err != -1){
-        console.log('error')
+        this.cfService.registerUser('').toPromise().then(res => {
+          console.log(res)
+        })
       }else{
-        console.log('pode seguir chefia')
+
+        console.log('heyehye')
+       
       }
      
       
