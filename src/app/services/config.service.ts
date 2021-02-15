@@ -44,9 +44,12 @@ export class ConfigService {
       "email": user['email'],
       "celular": user['telefone'],
       "mensagem": user['mensagem'],
-      "influencer": user['tipo']
+      "influencer": user['tipo'] == 'influencer'? true:false
     }
 
+    console.log(user['tipo'])
+
+    let obj = JSON.stringify(userObj)
     
 
     const headers = new HttpHeaders({
@@ -55,9 +58,8 @@ export class ConfigService {
 
     const url = "http://api.id.tec.br/ContatoSite/cadastrar"
     
-  
-    const options = { headers: headers };
      
-     return this.http.post(url, userObj, this.getHeaderConfig('id'))
+     
+     return this.http.post(url, (JSON.parse(obj)) )
   }
 }

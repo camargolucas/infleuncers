@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AlertController } from '@ionic/angular';
 import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ConfigService } from 'src/app/services/config.service';
 })
 export class CadastreSePage implements OnInit {
 
-  constructor(public cfService:ConfigService) { }
+  constructor(public cfService:ConfigService, private alertController:AlertController) { }
   radioButton = 'influencer'
   formgroup:FormGroup
   formGroupDesktop:FormGroup
@@ -53,15 +54,30 @@ export class CadastreSePage implements OnInit {
         return this.formgroup.controls[element].status === "INVALID"
       })
 
-  
-
 
     
       if (err != -1){
-        console.log('erro')
+        this.presentAlert({           
+          header: 'Faltou algo !',           
+          message: 'Preencha todos os campos corretamente !',
+          buttons: ['OK']
+        })
       }else{
         this.cfService.registerUser(this.formgroup.value).toPromise().then(res => {
-          console.log(res)
+          this.formgroup.reset()
+          this.presentAlert({           
+            header: 'Cadastrado',           
+            message: 'Envio feito com sucesso',
+            buttons: ['OK']
+          })
+        })
+        .catch(err =>{
+          this.presentAlert({           
+            header: 'Erro',           
+            message: 'Houve um problema ao envio',
+            buttons: ['OK']
+          })
+
         })
         
       }
@@ -75,17 +91,43 @@ export class CadastreSePage implements OnInit {
       console.log(this.formGroupDesktop.value)
 
       if (err != -1){
-        console.log('erro')
+        this.presentAlert({           
+          header: 'Faltou algo !',           
+          message: 'Preencha todos os campos corretamente !',
+          buttons: ['OK']
+        })
       }else{
 
         this.cfService.registerUser(this.formGroupDesktop.value).toPromise().then(res => {
-          
+          this.presentAlert({           
+            header: 'Cadastrado',           
+            message: 'Envio feito com sucesso',
+            buttons: ['OK']
+          })
+          this.formGroupDesktop.reset()          
+        })
+        .catch(err =>{
+
+          this.presentAlert({           
+            header: 'Erro',           
+            message: 'Houve um problema no envio',
+            buttons: ['OK']
+          })
+
         })
        
       }
      
       
     }
+  }
+
+
+  async presentAlert(OBJ) {
+    const alert = await this.alertController.create(OBJ);
+
+    
+    await alert.present();
   }
 
 
