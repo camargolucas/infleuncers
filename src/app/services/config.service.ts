@@ -51,11 +51,11 @@ export class ConfigService {
       'Content-Type': 'application/json',     
     })
 
-    const url = "/api.id.tec.br/ContatoSite/cadastrar/"
+    const url = "http://api.id.tec.br/ContatoSite/cadastrar"
     
   
     const options = { headers: headers };
      
-     return this.http.post(url, userObj, this.getHeaderConfig('asjdjsd'))
+     return this.http.post(url, userObj, this.getHeaderConfig('id'))
   }
 }
