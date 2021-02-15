@@ -53,13 +53,17 @@ export class CadastreSePage implements OnInit {
         return this.formgroup.controls[element].status === "INVALID"
       })
 
+  
+
+
     
       if (err != -1){
         console.log('erro')
       }else{
-        this.cfService.registerUser('').toPromise().then(res => {
+        this.cfService.registerUser(this.formgroup.value).toPromise().then(res => {
           console.log(res)
         })
+        
       }
 
 
@@ -68,12 +72,13 @@ export class CadastreSePage implements OnInit {
         return this.formGroupDesktop.controls[element].status === "INVALID"
       })
 
-    
+      console.log(this.formGroupDesktop.value)
+
       if (err != -1){
         console.log('erro')
       }else{
 
-        this.cfService.registerUser('').toPromise().then(res => {
+        this.cfService.registerUser(this.formGroupDesktop.value).toPromise().then(res => {
           
         })
        

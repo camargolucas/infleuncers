@@ -38,15 +38,17 @@ export class ConfigService {
 
   registerUser(user){
 
-  
-
+    
     const userObj = {
-      "nome": "jaime",
-      "email": "jaimiinho@ofinho.com",
-      "celular": "12312312323",
-      "mensagem": "asdfsdfsdfsdf",
-      "influencer": true
+      "nome": user['nome'],
+      "email": user['email'],
+      "celular": user['telefone'],
+      "mensagem": user['mensagem'],
+      "influencer": user['tipo']
     }
+
+    
+
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',     
     })
