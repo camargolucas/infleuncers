@@ -44,22 +44,23 @@
         <ion-icon name="exit-outline"></ion-icon>
         Plataforma
       </ion-button>
-      <ion-menu-button mode="ios"></ion-menu-button>
+      <ion-button (click)="openNav()" fill="clear"> <ion-icon name="menu-outline"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-menu type="overlay" side="end" *ngIf="cfgService.isMobile" contentId="main">
-    
+
+<div *ngIf="cfgService.isMobile" id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
   <ion-content>
     <ion-list id="inbox-list">
       <ion-list-header class="header-logo-mobile">
         <img class="logo" src="/assets/images/logo/logo_pink.svg">
       </ion-list-header> 
       <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-        <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+        <ion-item (click)="selectMenu(i)" routerDirection="root" [routerLink]="[p.url]" lines="none"
           detail="false" [class.selected]="selectedIndex == i">
-          <!--   <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon> -->
+       
           
           <ion-text>
             <div class="traço" ngClass="{{p.color + '-background'}}"></div>
@@ -72,7 +73,34 @@
     </ion-list>
 
   </ion-content>
-</ion-menu>
+</div>
+
+
+
+<!-- <ion-menu type="overlay" side="end" *ngIf="cfgService.isMobile" contentId="main">
+    
+  <ion-content>
+    <ion-list id="inbox-list">
+      <ion-list-header class="header-logo-mobile">
+        <img class="logo" src="/assets/images/logo/logo_pink.svg">
+      </ion-list-header> 
+      <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+        <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+          detail="false" [class.selected]="selectedIndex == i">
+       
+          
+          <ion-text>
+            <div class="traço" ngClass="{{p.color + '-background'}}"></div>
+            <div ngClass="{{p.color}}">
+              {{ p.title }}
+            </div>
+          </ion-text>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+
+  </ion-content>
+</ion-menu> -->
 
 <ion-content *ngIf="cfgService.isMobile" id="main">
   <ion-router-outlet></ion-router-outlet>

@@ -1,5 +1,6 @@
 ion-content {
     --background: var(--background-color);
+    overflow:auto;
   }
 
   $colorDefault: #305F9D;
@@ -73,36 +74,57 @@ ion-content {
 }
 
 
-.text-block{
-  background: $colorDefault;
-  color: white;
-  padding: 7vw;
-  text-align: center;
- 
-  .title{
-    width: 100%;
-    color: $colorTripa;
-    font-weight: bold;
 
-    h2{
-      font-size: 32px;
+
+
+
+.mobile{
+
+
+    
+  .text-block{
+    background: $colorDefault;
+    color: white;
+    padding: 7vw;
+    text-align: center;
+  
+    .title{
+      width: 100%;
+      color: $colorTripa;
+      font-weight: bold;
+
+      h2{
+        font-size: 32px;
+      }
     }
   }
-}
 
-.last{
-  border-radius: 0 0 50px 50px;
-}
+  .last{
+    border-radius: 0 0 50px 50px;
+  }
 
-.first{
-  border-radius: 50px 50px 0 0;
-}
+  .first{
+    border-radius: 50px 50px 0 0;
+  }
 
 
-ion-col{
-  padding: 0;
-}
+  ion-col{
+    padding: 0;
+  }
 
+  .mobile-tripa{
+    margin: 5vh 0 5vh 0;
+    background: $colorTripa;
+  
+    ion-button{
+      font-weight: bold;
+      font-size: 22px;
+      text-transform: inherit;
+    }
+  
+  }
+
+  
 .img-mobile{
 
   img{
@@ -111,15 +133,5 @@ ion-col{
   }
   
 }
-
-.mobile-tripa{
-  margin: 5vh 0 5vh 0;
-  background: $colorTripa;
-
-  ion-button{
-    font-weight: bold;
-    font-size: 22px;
-    text-transform: inherit;
-  }
-
+  
 }

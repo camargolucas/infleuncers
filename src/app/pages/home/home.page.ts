@@ -85,6 +85,20 @@ export class HomePage implements OnInit {
     
   }
 
+
+   openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  selectMenu(index){
+    this.selectedIndex = index;
+    this.closeNav()
+  }
+  
+   closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
   get isMobile() {
     return window.innerWidth <= 575;
   }
