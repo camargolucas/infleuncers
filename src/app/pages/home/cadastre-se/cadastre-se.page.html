@@ -7,15 +7,25 @@
 
       <form [formGroup]="formGroupDesktop" class="form">
         <div class="radio-button">
-        <mat-radio-group [(ngModel)]="radioButton"  formControlName="tipo"  aria-label="Select an option">
-          <mat-radio-button value="influencer">Influenciador</mat-radio-button>
-          <mat-radio-button value="company">Empresa</mat-radio-button>
-        </mat-radio-group>
-      </div>
+          <mat-radio-group
+            [(ngModel)]="radioButton"
+            formControlName="tipo"
+            aria-label="Select an option"
+          >
+            <mat-radio-button value="influencer"
+              >Influenciador</mat-radio-button
+            >
+            <mat-radio-button value="company">Empresa</mat-radio-button>
+          </mat-radio-group>
+        </div>
         <div class="field">
           <mat-form-field class="field" appearance="fill">
             <mat-label>Email</mat-label>
-            <input formControlName="email" matInput placeholder="Ex. jonas@mail.com" />
+            <input
+              formControlName="email"
+              matInput
+              placeholder="Ex. jonas@mail.com"
+            />
           </mat-form-field>
         </div>
 
@@ -29,13 +39,20 @@
         <div class="field">
           <mat-form-field style="width: 100%" appearance="fill">
             <mat-label>Telefone</mat-label>
-            <input formControlName="telefone" type="tel" mask="(00) 0 0000 0000" matInput placeholder="Ex. 11 99111 4032" />
+            <input
+              formControlName="telefone"
+              type="tel"
+              mask="(00) 0 0000 0000"
+              matInput
+              placeholder="Ex. 11 99111 4032"
+            />
           </mat-form-field>
         </div>
 
         <mat-form-field appearance="fill">
           <mat-label>Mensagem</mat-label>
-          <textarea formControlName="mensagem"
+          <textarea
+            formControlName="mensagem"
             matInput
             placeholder="Ex. Gostaria de conhecer mais sobre voces"
             maxlength="150"
@@ -43,7 +60,9 @@
         </mat-form-field>
 
         <div class="btn-enviar">
-          <ion-button [disabled]="btnEnviar" (click)="enviar()" fill="clear">Enviar</ion-button>
+          <ion-button [disabled]="btnEnviar" (click)="enviar()" fill="clear"
+            >Enviar</ion-button
+          >
         </div>
       </form>
     </ion-col>
@@ -58,55 +77,83 @@
 </ion-content>
 
 <ion-content *ngIf="cfService.isMobile">
-    
-    <img class="background-mobile" src="/assets/images/mobile/cadastre-mobile.png" />
-    <div class="div-title">
-      <div class="title-mobile">Faça seu Cadastro</div>
-      <div class="sub-title">INSPREAD-SE</div>
-    </div>
-
-   
-    <form [formGroup]="formgroup" class="form-mobile">
-      <div class="radio-button">
-      <mat-radio-group [(ngModel)]="radioButton"  formControlName="tipo"  aria-label="Select an option">
-        <mat-radio-button value="influencer">Influenciador</mat-radio-button>
-        <mat-radio-button value="company">Empresa</mat-radio-button>
-      </mat-radio-group>
-    </div>
-      <div class="field">
-        <mat-form-field  class="field" appearance="fill">
-          <mat-label>Email</mat-label>
-          <input formControlName="email"  matInput placeholder="Ex. jonas@mail.com" />          
-        </mat-form-field>
+  <ion-row style="height: 100%">
+    <img
+      class="background-mobile"
+      src="/assets/images/mobile/cadastre-mobile.png"
+    />
+    <ion-row class="row-title">
+      <div class="div-title">
+        <div class="title-mobile">Faça seu Cadastro</div>
+        <div class="sub-title">INSPREAD-SE</div>
       </div>
+    </ion-row>
 
-      <div class="field">
-        <mat-form-field  class="field" appearance="fill">
-          <mat-label>Nome</mat-label>
-          <input formControlName="nome" matInput placeholder="Ex. Jonas" />
-        </mat-form-field>
-      </div>
+    <ion-row class="row-form">
+      <form [formGroup]="formgroup" class="form-mobile">
+        <div class="radio-button">
+          <mat-radio-group
+            [(ngModel)]="radioButton"
+            formControlName="tipo"
+            aria-label="Select an option"
+          >
+            <mat-radio-button value="influencer"
+              >Influenciador</mat-radio-button
+            >
+            <mat-radio-button value="company">Empresa</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="field">
+          <mat-form-field class="field" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input
+              formControlName="email"
+              matInput
+              placeholder="Ex. jonas@mail.com"
+            />
+          </mat-form-field>
+        </div>
 
-      <div class="field">
+        <div class="field">
+          <mat-form-field class="field" appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input formControlName="nome" matInput placeholder="Ex. Jonas" />
+          </mat-form-field>
+        </div>
+
+        <div class="field">
+          <mat-form-field style="width: 100%" appearance="fill">
+            <mat-label>Telefone</mat-label>
+            <input
+              formControlName="telefone"
+              type="tel"
+              mask="(00) 0 0000 0000"
+              matInput
+              placeholder="Ex. 11 99111 4032"
+            />
+          </mat-form-field>
+        </div>
+
         <mat-form-field style="width: 100%" appearance="fill">
-          <mat-label>Telefone</mat-label>
-          <input  formControlName="telefone" type="tel" mask="(00) 0 0000 0000"  matInput placeholder="Ex. 11 99111 4032"  />
-         
+          <mat-label>Mensagem</mat-label>
+          <textarea
+            formControlName="mensagem"
+            matInput
+            placeholder="Ex. Gostaria de conhecer mais sobre voces"
+            maxlength="150"
+          ></textarea>
         </mat-form-field>
-      </div>
 
-      <mat-form-field  style="width: 100%" appearance="fill">
-        <mat-label>Mensagem</mat-label>
-        <textarea formControlName="mensagem"
-          matInput
-          placeholder="Ex. Gostaria de conhecer mais sobre voces"
-          maxlength="150"
-        ></textarea>
-      </mat-form-field>
-
-      <div class="btn-enviar">
-        <ion-button [disabled]="btnEnviar" fill="clear" (click)="enviar()" class="enviar-mobile">Enviar</ion-button>
-      </div>
-    </form>
-  
+        <div class="btn-enviar">
+          <ion-button
+            [disabled]="btnEnviar"
+            fill="clear"
+            (click)="enviar()"
+            class="enviar-mobile"
+            >Enviar</ion-button
+          >
+        </div>
+      </form>
+    </ion-row>
+  </ion-row>
 </ion-content>
