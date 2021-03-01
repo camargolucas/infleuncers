@@ -25,10 +25,10 @@ export class MissaoModalPage implements OnInit {
       valores:{
         titulo: 'Valores',
         img:'/assets/images/modals/valores.png',
-        txt: `Ética, Integridade, Transparência, Respeito, Compromisso, Profissionalismo, Disrrupção, Credibilidade, Qualidade, Foco, Segurança, Excelência, Eficiência.`
+        txt: `Ética, Integridade, Transparência, Respeito, Compromisso, Profissionalismo, Disrupção, Credibilidade, Qualidade, Foco, Segurança, Excelência, Eficiência.`
       },
       visao:{
-        titulo: 'Visao',
+        titulo: 'Visão',
         img:'/assets/images/modals/visao.png',
         txt: `Ser a maior e mais <b>importante</b> plataforma de marketplace de influenciadores digitais do Brasil, contribuindo para a <b>expansão</b> dos negócios dos nossos clientes, a partir do desenvolvimento da comunicação digital das suas marcas, produtos e serviços.`
       }

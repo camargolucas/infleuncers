@@ -46,7 +46,7 @@ export class CadastreSePage implements OnInit {
 
     this.btnEnviar = true;
     setTimeout(() => {
-        this.btnEnviar = false;
+       
     }, 2000);
     if(this.cfService.isMobile){
 
@@ -62,6 +62,7 @@ export class CadastreSePage implements OnInit {
           message: 'Preencha todos os campos corretamente !',
           buttons: ['OK']
         })
+        this.btnEnviar = false;
       }else{
         this.cfService.registerUser(this.formgroup.value).toPromise().then(res => {
           this.formgroup.reset()
@@ -70,6 +71,9 @@ export class CadastreSePage implements OnInit {
             message: 'Envio feito com sucesso',
             buttons: ['OK']
           })
+
+          this.btnEnviar = false;
+          
         })
         .catch(err =>{
           this.presentAlert({           
@@ -77,6 +81,8 @@ export class CadastreSePage implements OnInit {
             message: 'Houve um problema ao envio',
             buttons: ['OK']
           })
+
+          this.btnEnviar = false;
 
         })
         
@@ -87,15 +93,15 @@ export class CadastreSePage implements OnInit {
       let err = Object.keys(this.formGroupDesktop.controls).findIndex(element =>{
         return this.formGroupDesktop.controls[element].status === "INVALID"
       })
-
-      console.log(this.formGroupDesktop.value)
-
+   
       if (err != -1){
         this.presentAlert({           
           header: 'Faltou algo !',           
           message: 'Preencha todos os campos corretamente !',
           buttons: ['OK']
         })
+
+        this.btnEnviar = false;
       }else{
 
         this.cfService.registerUser(this.formGroupDesktop.value).toPromise().then(res => {
@@ -105,6 +111,7 @@ export class CadastreSePage implements OnInit {
             buttons: ['OK']
           })
           this.formGroupDesktop.reset()          
+          this.btnEnviar = false;
         })
         .catch(err =>{
 
@@ -113,6 +120,8 @@ export class CadastreSePage implements OnInit {
             message: 'Houve um problema no envio',
             buttons: ['OK']
           })
+
+          this.btnEnviar = false;
 
         })
        

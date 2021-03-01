@@ -73,10 +73,10 @@ export class InicioPage implements OnInit {
       id: '',
       path:'/assets/images/patrocinadores/adidas2.svg'
     },
-    {
+    /* {
       id: '',
       path:'/assets/images/patrocinadores/arena.svg'
-    },
+    }, */
     {
       id: '',
       path:'/assets/images/patrocinadores/ateliermix.svg'
