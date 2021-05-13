@@ -38,6 +38,10 @@ const routes: Routes = [
         path: 'fale-conosco',
         loadChildren: () => import('./fale-conosco/fale-conosco.module').then( m => m.FaleConoscoPageModule)
       },
+      {
+        path: '**',
+        redirectTo: 'inicio'
+      }
      
 
     ]
